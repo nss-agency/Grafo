@@ -1,6 +1,7 @@
 body {
 	line-height: 1.7;
 	color: lighten($black, 30%);
+	overflow-x: hidden;
 	font-weight: 400;
 	font-size: $font-size-base;
 	font-family: $font-family-monospace;
