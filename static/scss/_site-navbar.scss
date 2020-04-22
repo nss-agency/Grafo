@@ -1,3 +1,20 @@
+.main-content-wrapper {
+	transition: transform 0.4s;
+	transform-origin: 50% 150%;
+	transform: translateY(0) translateZ(0);
+
+}
+
+.body-navbar-active{
+	perspective: 1500px;
+	position: fixed;
+}
+
+.navbar-active {
+	transform: translateY(100%) translateZ(-1500px);
+	transform-origin: 50% 50%;
+}
+
 
 .site-navbar-top {
 	.site-logo {
@@ -5,6 +22,7 @@
 	}
 
 }
+
 .site-navbar-wrap {
 	position: relative;
 	z-index: 1;
@@ -23,11 +41,13 @@
 	margin-bottom: 0px;
 	width: 100%;
 	border-bottom: none;
-	position: absolute;
+	position: fixed;
 	z-index: 99;
-	
+	top: 0;
+
 	.site-logo {
 		font-weight: 200;
+
 		a {
 			font-weight: 200;
 			color: $black;
@@ -35,46 +55,56 @@
 	}
 
 	.site-navigation {
-		
+
 		.site-menu {
-			
+
 			margin-bottom: 0;
 			margin-left: 0;
 			padding-left: 0;
+
 			.active {
 				> a {
 					color: $white;
 				}
 			}
+
 			a {
-				text-decoration: none!important;
+				text-decoration: none !important;
 				// font-size: 15px;
 				display: inline-block;
 			}
+
 			> li {
 				display: inline-block;
 				padding: 10px 5px;
+
 				> a {
 					padding: 10px 10px;
 					letter-spacing: .05em;
 					color: rgba($white, .6);
-					text-decoration: none!important;
+					text-decoration: none !important;
+
 					&:hover {
 						color: $white;
 					}
 				}
+
 				&:last-child {
 					padding-right: 0;
+
 					> a {
 						padding-right: 0;
 					}
 				}
 			}
+
 			.has-children {
 				position: relative;
+
 				> a {
 					position: relative;
-					padding-right: 20px;						
+					padding-right: 20px;
+
 					&:before {
 						position: absolute;
 						content: "\e313";
@@ -85,13 +115,14 @@
 						font-family: 'icomoon';
 					}
 				}
+
 				.dropdown {
 					visibility: hidden;
 					opacity: 0;
 					top: 100%;
 					position: absolute;
 					text-align: left;
-					box-shadow: 0 2px 10px -2px rgba(0,0,0,.25);
+					box-shadow: 0 2px 10px -2px rgba(0, 0, 0, .25);
 					border-left: 1px solid $gray-4;
 					border-right: 1px solid $gray-4;
 					border-bottom: 1px solid $gray-4;
@@ -100,9 +131,10 @@
 					margin-left: 0px;
 					background: $white;
 					transition: 0.2s 0s;
-				
+
 					&.arrow-top {
 						position: absolute;
+
 						&:before {
 							bottom: 100%;
 							left: 20%;
@@ -113,14 +145,15 @@
 							position: absolute;
 							pointer-events: none;
 						}
+
 						&:before {
 							border-color: rgba(136, 183, 213, 0);
 							border-bottom-color: $white;
 							border-width: 10px;
 							margin-left: -10px;
-						}	
+						}
 					}
-					
+
 
 					a {
 						// font-size: 16px;
@@ -129,19 +162,23 @@
 						transition: 0s all;
 						color: $gray-800;
 					}
+
 					.active {
 						> a {
-							color: $black!important;
+							color: $black !important;
 						}
 					}
+
 					> li {
 						list-style: none;
 						padding: 0;
 						margin: 0;
 						min-width: 200px;
+
 						> a {
 							padding: 5px 20px;
 							display: block;
+
 							&:hover {
 								// background: lighten($gray-4, 2%);
 								color: $primary;
@@ -155,10 +192,12 @@
 									right: 20px;
 								}
 							}
+
 							> .dropdown, > ul {
 								left: 100%;
 								top: 0;
 							}
+
 							&:hover, &:active, &:focus {
 								> a {
 									// background: lighten($gray-4, 2%);
@@ -168,21 +207,23 @@
 						}
 					}
 				}
-				
+
 				&:hover, &:focus, &:active {
 					> a {
 						color: $white;
 					}
 				}
+
 				&:hover, &:focus, &:active {
 					cursor: pointer;
+
 					> .dropdown {
 						transition-delay: 0s;
 						margin-top: 0px;
 						visibility: visible;
 						opacity: 1;
 
-				
+
 					}
 				}
 			}
@@ -201,9 +242,9 @@
 	padding-top: 20px;
 	background: $white;
 	height: calc(100vh);
-	
+
 	transform: translateX(110%);
-	box-shadow: -10px 0 20px -10px rgba(0,0,0,.1);
+	box-shadow: -10px 0 20px -10px rgba(0, 0, 0, .1);
 	transition: .3s all ease-in-out;
 
 	.offcanvas-menu & {
@@ -215,10 +256,11 @@
 		float: left;
 		padding-left: 20px;
 		padding-right: 20px;
-		
+
 		.site-mobile-menu-close {
 			float: right;
 			margin-top: 8px;
+
 			span {
 				font-size: 30px;
 				display: inline-block;
@@ -227,21 +269,26 @@
 				line-height: 1;
 				cursor: pointer;
 				transition: .3s all ease;
+
 				&:hover {
 					color: $gray-1;
 				}
 			}
 		}
+
 		.site-mobile-menu-logo {
 			float: left;
 			margin-top: 10px;
 			margin-left: 0px;
+
 			a {
 				display: inline-block;
 				text-transform: uppercase;
+
 				img {
 					max-width: 70px;
 				}
+
 				&:hover {
 					text-decoration: none;
 				}
@@ -252,7 +299,7 @@
 	.site-mobile-menu-body {
 		// height: 400px;
 		overflow-y: scroll;
-  	-webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		position: relative;
 		padding: 20px;
 
@@ -260,6 +307,7 @@
 		padding-bottom: 150px;
 
 	}
+
 	.site-nav-wrap {
 		padding: 0;
 		margin: 0;
@@ -275,19 +323,23 @@
 			display: block;
 			position: relative;
 			color: $gray-900;
+
 			&:hover {
 				color: $primary;
 			}
 		}
+
 		li {
 			position: relative;
 			display: block;
+
 			&.active {
 				> a {
 					color: $primary;
 				}
 			}
 		}
+
 		.arrow-collapse {
 			position: absolute;
 			right: 0px;
@@ -298,9 +350,11 @@
 			text-align: center;
 			cursor: pointer;
 			border-radius: 50%;
+
 			&:hover {
 				background: $gray-100;
 			}
+
 			&:before {
 				font-size: 12px;
 				z-index: 20;
@@ -312,46 +366,54 @@
 				transform: translate(-50%, -50%) rotate(-180deg);
 				transition: .3s all ease;
 			}
+
 			&.collapsed {
 				&:before {
-					transform: translate(-50%, -50%);	
+					transform: translate(-50%, -50%);
 				}
 			}
 		}
+
 		> li {
 			display: block;
 			position: relative;
 			float: left;
 			width: 100%;
-			
+
 			> a {
 				padding-left: 20px;
 				font-size: 20px;
 			}
+
 			> ul {
 				padding: 0;
 				margin: 0;
 				list-style: none;
+
 				> li {
 					display: block;
+
 					> a {
 						padding-left: 40px;
 						font-size: 16px;
 					}
+
 					> ul {
 						padding: 0;
 						margin: 0;
+
 						> li {
 							display: block;
+
 							> a {
 								font-size: 16px;
-								padding-left: 60px;			
+								padding-left: 60px;
 							}
 						}
 					}
 				}
 			}
 		}
-		
+
 	}
 }
