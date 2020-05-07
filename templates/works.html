@@ -29,15 +29,25 @@
         <input checked type="radio" id="radio-filter-all" name="radio-filter">
         <label onclick="isoFilter(`:not([data-iso-all='ignore'])`)" class="radio-filter-label"
                for="radio-filter-all">ALL</label>
+        <input type="radio" id="radio-filter-commercial" name="radio-filter">
+        <label onclick="isoFilter(`[data-iso-type='com']`)" class="radio-filter-label" for="radio-filter-commercial">COMMERCIAL</label>
         <input type="radio" id="radio-filter-tv" name="radio-filter">
         <label onclick="isoFilter(`[data-iso-type='tv']`)" class="radio-filter-label" for="radio-filter-tv">TV</label>
         <input type="radio" id="radio-filter-creative" name="radio-filter">
-        <label onclick="isoFilter(`[data-iso-type='com']`)" class="radio-filter-label" for="radio-filter-creative">CREATIVE</label>
+        <label onclick="isoFilter(`[data-iso-type='cr']`)" class="radio-filter-label" for="radio-filter-creative">CREATIVE</label>
     </div>
 </div>
 <div class="site-section bg-light">
     <div class="container">
         <div class="row iso-container">
+
+            <div data-iso-type="com" data-iso-all="ignore" class="iso-item blank-work col-md-6 col-lg-4 mb-5 mb-lg-5">
+                <div class="blank">
+                    <div class="p-2 text">
+                        <p class="text-uppercase text-white h1">commercial</p>
+                    </div>
+                </div>
+            </div>
 
             <div data-iso-type="tv" data-iso-all="ignore" class="iso-item blank-work col-md-6 col-lg-4 mb-5 mb-lg-5">
                 <div class="blank">
@@ -47,7 +57,7 @@
                 </div>
             </div>
 
-            <div data-iso-type="com" data-iso-all="ignore" class="iso-item blank-work col-md-6 col-lg-4 mb-5 mb-lg-5">
+            <div data-iso-type="cr" data-iso-all="ignore" class="iso-item blank-work col-md-6 col-lg-4 mb-5 mb-lg-5">
                 <div class="blank">
                     <div class="p-2 text">
                         <p class="text-uppercase text-white h1">creative</p>
@@ -139,7 +149,7 @@
                 </div>
             </div>
 
-            <div data-iso-type="com" class="iso-item col-md-6 col-lg-4 mb-5 mb-lg-5">
+            <div data-iso-type="cr" class="iso-item col-md-6 col-lg-4 mb-5 mb-lg-5">
                 <div class="team-member">
 
                     <img src="{{ static }}images/person_5.jpg" alt="Image" class="img-fluid">
@@ -160,7 +170,7 @@
                 </div>
             </div>
 
-            <div data-iso-type="tv" class="iso-item col-md-6 col-lg-4 mb-5 mb-lg-5">
+            <div data-iso-type="cr" class="iso-item col-md-6 col-lg-4 mb-5 mb-lg-5">
                 <div class="team-member">
 
                     <img src="{{ static }}images/person_6.jpg" alt="Image" class="img-fluid">
@@ -183,6 +193,7 @@
         </div>
     </div>
 </div>
+
 
 {% include 'includes/footer.html' %}
 
