@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ project.title }}</title>
+</head>
+<body>
+{{ project.title }}
+<br>
+
+<img src="{{ project.image.url }}" alt="">
+<br>
+{{ project.slug }}
+<br>
+{{ project.video_url }}
+<br>
+{{ project.description|safe }}
+<br>
+{{ project.category }}
+</body>
+</html>

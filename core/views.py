@@ -1,7 +1,6 @@
 from django.shortcuts import render
+from .models import Project
 
-
-# Create your views here.
 
 def index(request):
     return render(request, 'index.html')
@@ -12,8 +11,21 @@ def about(request):
 
 
 def works(request):
-    return render(request, 'works.html')
+    projects = Project.objects.all()
+
+    ctx = {
+        'projects': projects,
+    }
+    return render(request, 'works.html', ctx)
 
 
 def contact(request):
     return render(request, 'contact.html')
+
+
+def work(request, slug):
+    project = Project.objects.get(slug=slug)
+    ctx = {
+        'project': project,
+    }
+    return render(request, 'work.html', ctx)
