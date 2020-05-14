@@ -15,6 +15,7 @@ class Project(models.Model):
     image = models.ImageField('Зображення', upload_to='images')
     video_url = models.URLField('Url vimeo')
     description = HTMLField('Опис проекту')
+    description_short = models.TextField(max_length=300)
     category = models.CharField('Категорія', max_length=225, choices=CATEGORY_CHOICES, default='com')
 
     def __str__(self):

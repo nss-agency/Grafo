@@ -3,7 +3,11 @@ from .models import Project
 
 
 def index(request):
-    return render(request, 'index.html')
+    projects = Project.objects.all().order_by('-id')[:5]
+
+    ctx = {'projects': projects}
+
+    return render(request, 'index.html', ctx)
 
 
 def about(request):
@@ -28,4 +32,5 @@ def work(request, slug):
     ctx = {
         'project': project,
     }
+
     return render(request, 'work.html', ctx)
