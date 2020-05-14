@@ -1,6 +1,6 @@
 body {
 	line-height: 1.7;
-	color: lighten($black, 30%);
+	color: #fff;
 	overflow-x: hidden;
 	font-weight: 400;
 	font-size: $font-size-base;
@@ -8,12 +8,12 @@ body {
 	font-family: $font-family-sans-serif;
 }
 ::-moz-selection { 
-	background: $black;
-	color: $white;
+	background: $white;
+	color: $black;
 }
 ::selection { 
-	background: $black;
-	color: $white;
+	background: $white;
+	color: $black;
 }
 a {
 	transition: .3s all ease;

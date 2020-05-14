@@ -1,0 +1,12 @@
+.footer_image_block {
+    padding-top: 7em;
+ @media only screen and (max-width: 740px) {
+                padding-top: 0;
+        }
+    .footer_image {
+        height: 8rem;
+        @media only screen and (max-width: 740px) {
+                height: 3.7rem;
+        }
+    }
+}

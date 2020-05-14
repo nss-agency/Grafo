@@ -2,7 +2,7 @@
     transition: transform 0.4s;
     transform-origin: 50% 150%;
     transform: translateY(0) translateZ(0);
-
+    background: #000;
 }
 
 .navbar_logo {
@@ -239,7 +239,7 @@
 // mobile menu
 
 .site-mobile-menu {
-    width: 300px;
+    width: 220px;
     position: fixed;
     right: 0;
     z-index: 2000;
@@ -302,8 +302,6 @@
 
     .site-mobile-menu-body {
         // height: 400px;
-        overflow-y: scroll;
-        -webkit-overflow-scrolling: touch;
         position: relative;
         padding: 20px;
 
