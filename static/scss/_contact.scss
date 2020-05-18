@@ -1,6 +1,6 @@
 .contact-container {
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
 
     .contact-center {
         top: 50%;
@@ -45,17 +45,17 @@
                 i,
                 span {
                     font-size: 40px;
-                    color: #8e7ce6;
+                    color: #FCB603;
                 }
             }
 
             h3 {
                 font-size: 1rem;
                 font-weight: 300;
-                color: #8e7ce6;
+                color: #FCB603;
 
                 a {
-                    color: #8e7ce6;
+                    color: #FCB603;
                 }
             }
 
@@ -101,7 +101,7 @@
             //margin: 0 auto;
 
             &:focus {
-                border-color: #8e7ce6;
+                border-color: #FCB603;
                 outline: none;
                 background: white;
                 color: black;
@@ -112,7 +112,7 @@
             }
 
             &:valid {
-                border-color: #8e7ce6;
+                border-color: #FCB603;
             }
         }
 
@@ -130,7 +130,7 @@
             //margin: 0 auto;
 
             &:focus {
-                border-color: #8e7ce6;
+                border-color: #FCB603;
                 outline: none;
                 background: white;
                 color: black;
@@ -141,7 +141,7 @@
             }
 
             &:valid {
-                border-color: #8e7ce6;
+                border-color: #FCB603;
             }
         }
     }
@@ -182,7 +182,7 @@
         opacity: 0;
 
         &:checked ~ .custom_check {
-            background: #8e7ce6;
+            background: #FCB603;
 
         }
     }
@@ -209,7 +209,7 @@
         }
 
         .link-pr {
-            color: #8e7ce6;
+            color: #FCB603;
         }
     }
 
@@ -231,7 +231,7 @@
         .required {
             &:after {
                 content: " *";
-                color: #8e7ce6;
+                color: #FCB603;
             }
         }
 
@@ -247,12 +247,12 @@
             transition: border-bottom-color .3s;
 
             &:focus {
-                border-bottom-color: #8e7ce6;
+                border-bottom-color: #FCB603;
                 outline: none;
             }
 
             &:valid {
-                border-bottom-color: #8e7ce6;
+                border-bottom-color: #FCB603;
             }
         }
 
@@ -268,12 +268,12 @@
             transition: border-bottom-color .3s;
 
             &:focus {
-                border-bottom-color: #8e7ce6;
+                border-bottom-color: #FCB603;
                 outline: none;
             }
 
             &:valid {
-                border-bottom-color: #8e7ce6;
+                border-bottom-color: #FCB603;
             }
         }
     }
@@ -386,6 +386,10 @@ iframe {
 }
 
 .btn-contact {
-    background-color: #8e7ce6;
-    border-color: #8e7ce6;
+    background-color: #FCB603;
+    border-color: #FCB603;
+}
+
+dl, ol, ul {
+    padding: 0;
 }

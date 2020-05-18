@@ -15,7 +15,7 @@
 {% include 'includes/navbar.html' %}
 
 <div class="" id="main-content-wrapper">
-    <div class="site-blocks-cover overlay"
+    <div class="site-blocks-cover overlay-main"
          data-aos="fade"
          data-stellar-background-ratio="0.5" data-aos="fade">
         <div>
@@ -40,12 +40,12 @@
         <div class="container">
 
             <div class="row">
-                <div class="site-section-heading text-center mb-2 w-border mx-auto" data-aos="fade-up">
+                <div class="site-section-heading text-justify mb-2 w-border mx-auto" data-aos="fade-up">
                     <p style="font-size:2rem">Create is a studio specializing in 2D animation.
                         Founded by a team of like-minded people, with unlimited imagination and desire to create
                         original content. We can take care of your business starting with an great idea, and finishing
                         with a completed project. We use our skills of storytelling, motion design, and frame by frame
-                        animation to produce a high-quality product.</p>
+                        animation to produce a high-quality product. <br> See our full <a class="text-uppercase a-index" href="{% url 'works' %}">portfolio →</a></p>
                 </div>
             </div>
         </div>
@@ -131,106 +131,31 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-
                         <img src="{{ static }}images/5.png" alt="Image" class="img-fluid">
-
-                        <div class="text">
-
-                            <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit
-                                nemo.</p>
-                            <p>
-                                <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                            </p>
-                        </div>
-
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-
                         <img src="{{ static }}images/6.png" alt="Image" class="img-fluid">
-
-                        <div class="text">
-
-                            <h2 class="mb-2 font-weight-light h4">Philip Martin</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit
-                                nemo.</p>
-                            <p>
-                                <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                            </p>
-                        </div>
-
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-
                         <img src="{{ static }}images/8.png" alt="Image" class="img-fluid">
-
-                        <div class="text">
-
-                            <h2 class="mb-2 font-weight-light h4">Steven Ericson</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit
-                                nemo.</p>
-                            <p>
-                                <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                            </p>
-                        </div>
-
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-
                         <img src="{{ static }}images/9.png" alt="Image" class="img-fluid">
-
-                        <div class="text">
-
-                            <h2 class="mb-2 font-weight-light h4">Nathan Dumlao</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit
-                                nemo.</p>
-                            <p>
-                                <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                            </p>
-                        </div>
-
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-
                         <img src="{{ static }}images/3.png" alt="Image" class="img-fluid">
-
-                        <div class="text">
-
-                            <h2 class="mb-2 font-weight-light h4">Brooke Cagle</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">Creative Director</span>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit ullam reprehenderit
-                                nemo.</p>
-                            <p>
-                                <a href="#" class="text-white p-2"><span class="icon-facebook"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-twitter"></span></a>
-                                <a href="#" class="text-white p-2"><span class="icon-linkedin"></span></a>
-                            </p>
-                        </div>
-
                     </div>
                 </div>
 
@@ -238,7 +163,7 @@
             </div>
         </div>
         <div class="site-blocks-cover inner-page-cover-index  subscribe"
-             style="background-image: url({{ static }}images/photo5307781423064788533.jpg);"
+             style="background-image: url({{ static }}images/city.jpg);"
              data-aos="fade" data-stellar-background-ratio="0.5">
             <div class="container text-black">
                 <div class="row align-items-center justify-content-center text-center">
@@ -248,11 +173,11 @@
                         <p class="mb-5"></p>
                         <form action="#" method="post" class="site-block-subscribe">
                             <div class="input-group mb-3">
-                                <input type="text" class=" form-control border-secondary text-white bg-transparent"
-                                       placeholder="Enter your email" aria-label="Enter Email"
+                                <input type="email" class=" form-control border-secondary text-black bg-transparent"
+                                       placeholder=" " aria-label="Enter Email"
                                        aria-describedby="button-addon2">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button" id="button-addon2">Send</button>
+                                    <button class="btn btn-contact" type="button" id="button-addon2">Send</button>
                                 </div>
                             </div>
                         </form>

@@ -14,8 +14,23 @@
 			bottom: 0;
 			right: 0;
 			top: 0;
-			height: 107%;
+			height: 100%;
 			background: rgba($black, .5);
+		}
+
+			&.overlay-main {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			right: 0;
+			top: 0;
+			height: 102%;
+			background: rgba($black, .5);
+		}
 		}
 	}
 
@@ -104,7 +119,7 @@
 
 	.form-control {
 		font-weight: 300;
-		border-color: $white !important;
+		border-color: #FCB603 !important;
 		height: 60px;
 		color: $white;
 		padding-left: 20px;
@@ -1598,25 +1613,6 @@
 		visibility: hidden;
 		color: $white;
 	}
-
-	&:hover, &:focus, &:active {
-		&:before {
-			opacity: 1;
-			visibility: visible;
-		}
-
-		img {
-			transform: scale(1.1);
-		}
-
-		.text {
-			transform: translate(-50%, -50%);
-			transition-delay: .2s;
-			opacity: 1;
-			visibility: visible;
-			z-index: 4;
-		}
-	}
 }
 
 .more-button {
@@ -1628,7 +1624,7 @@
 
 
 	a {
-		color: $black;
+		color: #040814;
 		text-decoration: none;
 	}
 
@@ -1649,7 +1645,7 @@
 	}
 
 	&:hover {
-		background-color: $black;
+		background-color: #040814;
 
 		a {
 			color: $white;
@@ -1739,7 +1735,7 @@
 			transform: translateY(-15px);
 
 			&:after {
-				background-color: #8e7ce6;
+				background-color: #FCB603;
 				transform: translateY(15px);
 			}
 		}
