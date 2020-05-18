@@ -1,0 +1,39 @@
+.footer_image_block {
+	padding-top: 7em;
+	@media only screen and (max-width: 740px) {
+		padding-top: 0;
+	}
+
+	.footer_image {
+		height: 8rem;
+		@media only screen and (max-width: 740px) {
+			height: 3.7rem;
+		}
+	}
+}
+
+.video-kek {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 102%;
+	object-fit: cover;
+}
+
+
+.video-contact {
+	position: fixed;
+	left: 50vw;
+	top: 50vh;
+	min-width: 102%;
+	min-height: 104vh;
+	transform: translate(-50%, -50%);
+}
+
+.project-tiny{
+	img{
+		width: 100%;
+	}
+}
