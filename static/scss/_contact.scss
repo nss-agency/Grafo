@@ -388,6 +388,12 @@ iframe {
 .btn-contact {
     background-color: #FCB603;
     border-color: #FCB603;
+    transition: background-color .3s, color .3s;
+
+    &:hover{
+        background-color: $black;
+        color: #fcb603
+    }
 }
 
 dl, ol, ul {
