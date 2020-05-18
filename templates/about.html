@@ -24,19 +24,19 @@
     </div>
 </div>
 <div class="site-section">
- <div class="container">
+    <div class="container">
 
-            <div class="row">
-                <div class="site-section-heading text-justify w-border mx-auto" data-aos="fade-up">
-                    <p style="font-size:2rem">Create is a studio specializing in 2D animation.
-                        Founded by a team of like-minded people, with unlimited imagination and desire to create
-                        original content. We can take care of your business starting with an great idea, and finishing
-                        with a completed project. We use our skills of storytelling, motion design, and frame by frame
-                        animation to produce a high-quality product.</p>
-                </div>
+        <div class="row">
+            <div class="site-section-heading text-justify w-border mx-auto" data-aos="fade-up">
+                <p style="font-size:2rem">Create is a studio specializing in 2D animation.
+                    Founded by a team of like-minded people, with unlimited imagination and desire to create
+                    original content. We can take care of your business starting with an great idea, and finishing
+                    with a completed project. We use our skills of storytelling, motion design, and frame by frame
+                    animation to produce a high-quality product.</p>
             </div>
         </div>
     </div>
+</div>
 <div class="site-section">
 
     <div class="container" data-aos="fade-up">
@@ -51,7 +51,7 @@
             <div class="col-md-6 col-lg-12 mb-5 mb-lg-5">
                 <div class="team-member">
 
-                    <img src="{{ static }}images/person_1.jpg" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/2.png" alt="Image" class="img-fluid">
 
                 </div>
             </div>
@@ -59,7 +59,7 @@
             <div class="col-md-6 col-lg-8 mb-5 mb-lg-5">
                 <div class="team-member">
 
-                    <img src="{{ static }}images/person_2.jpg" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/3.png" alt="Image" class="img-fluid">
 
                 </div>
             </div>
@@ -67,7 +67,7 @@
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                 <div class="team-member">
 
-                    <img src="{{ static }}images/person_3.jpg" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/4.png" alt="Image" class="img-fluid">
 
                 </div>
             </div>
@@ -75,7 +75,7 @@
             <div class="col-md-6 col-lg-6 mb-5 mb-lg-5">
                 <div class="team-member">
 
-                    <img src="{{ static }}images/person_4.jpg" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/5.png" alt="Image" class="img-fluid">
 
                 </div>
             </div>
@@ -83,7 +83,7 @@
             <div class="col-md-6 col-lg-6 mb-5 mb-lg-5">
                 <div class="team-member">
 
-                    <img src="{{ static }}images/person_5.jpg" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/6.png" alt="Image" class="img-fluid">
 
                 </div>
             </div>
@@ -92,51 +92,23 @@
     </div>
 </div>
 
-<div class="site-section">
+<div class="site-section" style="padding-top: 0">
 
-    <div class="container">
-
-        <div class="row">
-            <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto" data-aos="fade-up">
-                <h2 class="mb-5">Our Partners</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, fugit nam obcaecati fuga itaque
-                    deserunt officia, error reiciendis ab quod?</p>
-            </div>
-        </div>
-
-        <div class="site-block-retro d-block d-md-flex">
-
-            <a href="#" class="col1 unit-9 no-height" data-aos="fade-up" data-aos-delay="100">
-                <div class="image" style="background-image: url('{{ static }}images/img_2.jpg');"></div>
-                <div class="unit-9-content">
-                    <h2>Classic Songs For Classic People</h2>
-                    <span>Friday 1:00pm &mdash; 2:30pm</span>
+    <div class="partners " >
+        <h3 class="">Partners</h3>
+        <span>PARTNERS CONFIDE US</span>
+        <div class="partners-grid">
+            {% for item in partners %}
+                <div class="partners-grid-wraper">
+                    <a href="{{ item.link }}">
+                        <img class="partners-grid-item" src="{{ item.image.url }}" alt="">
+                    </a>
                 </div>
-            </a>
 
-            <div class="col2 ml-auto">
-
-                <a href="#" class="col2-row1 unit-9 no-height" data-aos="fade-up" data-aos-delay="200">
-                    <div class="image" style="background-image: url('{{ static }}images/img_3.jpg');"></div>
-                    <div class="unit-9-content">
-                        <h2>Classic Songs For Classic People</h2>
-                        <span>Friday 1:00pm &mdash; 2:30pm</span>
-                    </div>
-                </a>
-
-                <a href="#" class="col2-row2 unit-9 no-height" data-aos="fade-up" data-aos-delay="300">
-                    <div class="image" style="background-image: url('{{ static }}images/img_1.jpg');"></div>
-                    <div class="unit-9-content">
-                        <h2>Classic Songs For Classic People</h2>
-                        <span>Friday 1:00pm &mdash; 2:30pm</span>
-                    </div>
-                </a>
-
-            </div>
-
+            {% endfor %}
         </div>
-
     </div>
+
 </div>
 
 {% include 'includes/footer.html' %}

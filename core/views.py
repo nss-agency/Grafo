@@ -1,21 +1,28 @@
 from django.shortcuts import render
-from .models import Project
+from .models import Project, Partner
 
 
 def index(request):
     projects = Project.objects.all().order_by('-id')[:5]
+    partners = Partner.objects.all()
 
-    ctx = {'projects': projects}
+    ctx = {
+        'projects': projects,
+        'partners': partners,
+           }
 
     return render(request, 'index.html', ctx)
 
 
 def about(request):
-    return render(request, 'about.html')
+    ctx = {
+        'partners': Partner.objects.all(),
+    }
+    return render(request, 'about.html', ctx)
 
 
 def works(request):
-    projects = Project.objects.all()
+    projects = Project.objects.all().order_by('-id')
 
     ctx = {
         'projects': projects,
