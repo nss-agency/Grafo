@@ -7,6 +7,7 @@ body {
 	font-family: $font-family-monospace;
 	font-family: $font-family-sans-serif;
 	background: #040814;
+	overflow-x: hidden;
 }
 ::-moz-selection { 
 	background: $white;
