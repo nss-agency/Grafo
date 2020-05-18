@@ -96,7 +96,7 @@
          data-aos="fade" data-stellar-background-ratio="0.5">
     </div>
 
-    <div class="site-section">
+    <div style="padding-bottom: 2rem" class="site-section">
         <div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
@@ -148,20 +148,7 @@
         </div>
         <div class="site-section" >
 
-    <div class="partners " >
-        <h3 class="">Partners</h3>
-        <span>PARTNERS CONFIDE US</span>
-        <div class="partners-grid">
-            {% for item in partners %}
-                <div class="partners-grid-wraper">
-                    <a target="_blank" href="{{ item.link }}">
-                        <img class="partners-grid-item" src="{{ item.image.url }}" alt="">
-                    </a>
-                </div>
 
-            {% endfor %}
-        </div>
-    </div>
 
 </div>
         <div class="site-blocks-cover inner-page-cover-index  subscribe"
@@ -187,9 +174,20 @@
                 </div>
             </div>
         </div>
-        <div class="site-section-heading text-center w-border mx-auto footer_image_block">
-            <img class="footer_image" src="{{ static }}images/create_white.svg" alt="">
+            <div class="partners mt-5 mb-5" >
+        <h3 class="">Partners</h3>
+        <span>PARTNERS CONFIDE US</span>
+        <div class="partners-grid">
+            {% for item in partners %}
+                <div class="partners-grid-wraper">
+                    <a target="_blank" href="{{ item.link }}">
+                        <img class="partners-grid-item" src="{{ item.image.url }}" alt="">
+                    </a>
+                </div>
+
+            {% endfor %}
         </div>
+    </div>
     </div>
 
 </div>
