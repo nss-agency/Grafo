@@ -96,10 +96,15 @@
 background-color: $main;
 }
 
+.hero-video-container{
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
 .video-hero{
   position: absolute;
   z-index: -1;
-  height: 200vh;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -107,4 +112,5 @@ background-color: $main;
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+  height: 100vh;
 }
