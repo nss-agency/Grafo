@@ -239,16 +239,14 @@
 // mobile menu
 
 .site-mobile-menu {
-    width: 220px;
+    width: 12rem;
     position: fixed;
     right: 0;
     z-index: 2000;
-    padding-top: 20px;
-    background: $main;
-    height: calc(100vh);
+    background: #040814cc;
+    height: 100%;
 
     transform: translateX(110%);
-    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, .1);
     transition: .3s all ease-in-out;
 
     .offcanvas-menu & {
@@ -301,12 +299,9 @@
     }
 
     .site-mobile-menu-body {
-        // height: 400px;
-        position: relative;
-        padding: 20px;
-
-        height: calc(100vh - 52px);
-        padding-bottom: 150px;
+        position: absolute;
+        top: 40%;
+        text-align: center;
 
     }
 

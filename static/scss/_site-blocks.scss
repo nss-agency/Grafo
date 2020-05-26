@@ -1511,7 +1511,7 @@
 				left: 0;
 				bottom: 0;
 				height: 2px;
-				background: $primary;
+				background: #FCB603;
 			}
 		}
 
@@ -1701,7 +1701,6 @@
 		text-align: left;
 		position: absolute;
 		padding: 20px;
-		width: 100%;
 		//transform: scale(1);
 		transform-origin: 0 100%;
 
@@ -1763,15 +1762,26 @@
 	}
 }
 
+
+
 .mejs__container {
 	width: 100% !important;
 }
-
+.works-portfolio{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	display: inline-flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+    flex-wrap: wrap;
+}
 .works-filter-block {
-	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
-	position: absolute;
+	position: relative;
 	display: flex;
 	justify-content: space-around;
 	width: 50%;

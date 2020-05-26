@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Spartan:wght@200;300;400;700;900&display=swap');
+
 body {
 	line-height: 1.7;
 	color: #fff;
 	overflow-x: hidden;
 	font-weight: 400;
 	font-size: $font-size-base;
-	font-family: $font-family-monospace;
-	font-family: $font-family-sans-serif;
+	font-family: "Montserrat", sans-serif;
 	background: #040814;
 	overflow-x: hidden;
 }
@@ -22,6 +23,11 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Spartan", sans-serif;
+	font-weight: bold;
 }
 
 .a-index {
@@ -50,9 +56,9 @@ a {
 .site-wrap {
 	&:before {
 		transition: .3s all ease-in-out;
-		background: rgba(0,0,0,.6);
+		background: rgba(0,0,0,.3);
 		content: "";
-		position: absolute;
+		position: fixed;
 		z-index: 2000;
 		top: 0;
 		left: 0;
