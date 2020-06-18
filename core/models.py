@@ -13,7 +13,7 @@ class Project(models.Model):
     title = models.CharField('Назва проекту', max_length=60)
     slug = AutoSlugField(populate_from='title')
     image = models.ImageField('Зображення', upload_to='images/works')
-    video_url = models.URLField('Url vimeo')
+    video_url = models.URLField('Url')
     description = HTMLField('Опис проекту')
     description_short = models.TextField(max_length=300)
     category = models.CharField('Категорія', max_length=225, choices=CATEGORY_CHOICES, default='com')

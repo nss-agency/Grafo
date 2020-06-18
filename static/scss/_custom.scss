@@ -64,8 +64,8 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                max-height: 175px;
-                height: 40px;
+                max-height: 100%;
+                max-width: 100%;
 
                 img {
                     height: 100%;
@@ -112,7 +112,7 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    height: 102vh;
+    height: 110vh;
 }
 
 .hero-index {

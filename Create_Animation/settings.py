@@ -120,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-GOOGLE_RECAPTCHA_SECRET_KEY = '*******'
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LdeXfwUAAAAAF0_xFcwNPKz95CeBjspP9RSj57Y'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
@@ -130,13 +130,14 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_USE_SSL = True
-EMAIL_HOST = 'euvip01.twinservers.net'
+EMAIL_HOST = 'createanimation.co'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'noreply@createanimation.co'
-EMAIL_HOST_PASSWORD = '*******'
+EMAIL_HOST_PASSWORD = '4)b_=j?eUtx2'
 
 TINYMCE_JS_URL = os.path.join("", "js/tinymce/tinymce.min.js")
 TINYMCE_JS_ROOT = os.path.join("", "js/tinymce")

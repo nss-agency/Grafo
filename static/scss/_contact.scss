@@ -45,17 +45,20 @@
                 i,
                 span {
                     font-size: 40px;
-                    color: #FCB603;
+                    color: $accent
+                ;
                 }
             }
 
             h3 {
                 font-size: 1rem;
                 font-weight: 300;
-                color: #FCB603;
+                color: $accent
+            ;
 
                 a {
-                    color: #FCB603;
+                    color: $accent
+                ;
                 }
             }
 
@@ -101,7 +104,8 @@
             //margin: 0 auto;
 
             &:focus {
-                border-color: #FCB603;
+                border-color: $accent
+            ;
                 outline: none;
                 background: white;
                 color: black;
@@ -112,7 +116,8 @@
             }
 
             &:valid {
-                border-color: #FCB603;
+                border-color: $accent
+            ;
             }
         }
 
@@ -130,7 +135,8 @@
             //margin: 0 auto;
 
             &:focus {
-                border-color: #FCB603;
+                border-color: $accent
+            ;
                 outline: none;
                 background: white;
                 color: black;
@@ -141,7 +147,8 @@
             }
 
             &:valid {
-                border-color: #FCB603;
+                border-color: $accent
+            ;
             }
         }
     }
@@ -182,7 +189,8 @@
         opacity: 0;
 
         &:checked ~ .custom_check {
-            background: #FCB603;
+            background: $accent
+        ;
 
         }
     }
@@ -209,7 +217,8 @@
         }
 
         .link-pr {
-            color: #FCB603;
+            color: $accent
+        ;
         }
     }
 
@@ -219,7 +228,7 @@
         .input-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
             grid-gap: 1em;
         }
 
@@ -231,7 +240,8 @@
         .required {
             &:after {
                 content: " *";
-                color: #FCB603;
+                color: $accent
+            ;
             }
         }
 
@@ -247,12 +257,14 @@
             transition: border-bottom-color .3s;
 
             &:focus {
-                border-bottom-color: #FCB603;
+                border-bottom-color: $accent
+            ;
                 outline: none;
             }
 
             &:valid {
-                border-bottom-color: #FCB603;
+                border-bottom-color: $accent
+            ;
             }
         }
 
@@ -268,12 +280,14 @@
             transition: border-bottom-color .3s;
 
             &:focus {
-                border-bottom-color: #FCB603;
+                border-bottom-color: $accent
+            ;
                 outline: none;
             }
 
             &:valid {
-                border-bottom-color: #FCB603;
+                border-bottom-color: $accent
+            ;
             }
         }
     }
@@ -386,13 +400,16 @@ iframe {
 }
 
 .btn-contact {
-    background-color: #FCB603;
-    border-color: #FCB603;
+    background-color: $accent
+;
+    border-color: $accent
+;
     transition: background-color .3s, color .3s;
 
     &:hover{
         background-color: $main;
-        color: #fcb603
+        color: $accent
+    ;
     }
 }
 

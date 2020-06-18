@@ -8,6 +8,9 @@
 // Color system
 //
 
+$accent: #FF0088;
+$background: #0D0A38;
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -37,7 +40,7 @@ $grays: map-merge(
   $grays
 );
 
-$main: #040814 !default;
+$main: #0d0a38 !default;
 $details: #112254 !default;
 $blue:    #033fff !default;
 $indigo:  #6610f2 !default;

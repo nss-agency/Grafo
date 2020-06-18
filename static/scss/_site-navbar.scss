@@ -7,6 +7,7 @@
 
 .navbar_logo {
     height: 2rem;
+    transition: 0.3s;
 }
 
 .body-navbar-active {
@@ -243,7 +244,7 @@
     position: fixed;
     right: 0;
     z-index: 2000;
-    background: #040814cc;
+    background: $background;
     height: 100%;
 
     transform: translateX(110%);
@@ -322,7 +323,7 @@
             color: White;
 
             &:hover {
-                color: #FCB603;
+                color: $accent;
             }
         }
 
@@ -332,7 +333,7 @@
 
             &.active {
                 > a {
-                    color: #FCB603;
+                    color: $accent;
                 }
             }
         }

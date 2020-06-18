@@ -11,9 +11,9 @@ def send_contact(request):
     message = request.POST.get('message', '')
     from_email = request.POST.get('email', '')
     whatsapp = request.POST.get('whatsapp', '')
-    messages = 'Name and Surname: {} {} \nWhatsApp: {}\nFrom: {}\nMessage: \n{}\n\n\n\nSent From dark-render.com'.format(
+    messages = 'Name and Surname: {} {} \nWhatsApp: {}\nFrom: {}\nMessage: \n{}\n\n\n\nSent From createanimation.co'.format(
         fname, lname, whatsapp, from_email, message)
-    send_mail(subject, messages, 'noreply@createanimation.co', ['miheden428@whowlft.com'], fail_silently=False)
+    send_mail(subject, messages, 'noreply@createanimation.co', ['ostapcha@createanimation.co'], fail_silently=False)
 
 
 def index(request):
