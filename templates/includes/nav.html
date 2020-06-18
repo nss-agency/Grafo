@@ -4,7 +4,8 @@
             <div class="row align-items-center">
                 <div class="col-8 col-md-8 col-lg-4">
                     <h1 class="mb-0 ml-5"><a href="{% url 'index' %}" class="text-white h2 mb-0">
-                        <img class="navbar_logo" src="{{ static }}images/create_white.svg" alt="">
+                        <img id="logoMain" class="navbar_logo" data-swap="{{ static }}images/animated_logo.gif"
+                             src="{{ static }}images/create_white.svg" alt="">
                     </a>
                     </h1>
                 </div>
@@ -32,3 +33,5 @@
     </div>
     <div class="site-mobile-menu-body"></div>
 </div> <!-- .site-mobile-menu -->
+
+

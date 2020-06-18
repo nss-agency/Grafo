@@ -4,6 +4,18 @@ AOS.init({
     once: true
 });
 
+
+var imageSwap = function () {
+    var $this = $(this);
+    var newSource = $this.data('swap');
+    $this.data('swap', $this.attr('src'));
+    $this.attr('src', newSource);
+}
+$(function () {
+    $('img.navbar_logo').hover(imageSwap, imageSwap);
+});
+
+
 jQuery(document).ready(function ($) {
 
     "use strict";
