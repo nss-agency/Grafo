@@ -1,10 +1,32 @@
-{% load static %}
+{% load static i18n %}
 {% get_static_prefix as static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Create</title>
+    <title>{% blocktrans %}Works{% endblocktrans %} | Grafo Studio</title>
     <meta charset="utf-8">
+    <meta property="og:site_name" content="Grafo Studio"/>
+    <meta property="og:title" content="Works | Grafo Studio"/>
+    <meta property="og:description"
+          content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
+    <meta property="og:url" content="https://grafo.studio/works/">
+    <meta property="og:type" content="animation studio"/>
+    <meta property="og:image" content="{% static 'images/about/main_logo.png' %}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@NightSkyStudio"/>
+    <meta property="og:url" content="https://grafo.studio/works/"/>
+    <meta property="og:title" content="Works | Grafo Studio"/>
+    <meta property="og:description"
+          content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
+    <meta property="og:image" content="{% static 'images/about/main_logo.png' %}"/>
+    <meta name="description"
+          content="Grafo is a studio specializing in 2D animation. Founded by a team of like-minded people, with unlimited imagination and desire to create original content. We can take care of your business starting with an great idea, and finishing with a completed project.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+          content="2d, 2d animation, 2d art, 2d advertisement, advertisement, animation studio, animation"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% include 'includes/head_links.html' %}
 </head>
@@ -17,8 +39,9 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-md-5 text-center" data-aos="fade-up" data-aos-delay="400">
 
-                <h2 class="text-white h1">Our Works</h2>
-                <p class="text-">We will approach your video using all our creativity.</p>
+                <h2 class="text-white h1">{% blocktrans %}Our Works{% endblocktrans %}</h2>
+                <p class="text-">{% blocktrans %}We will approach your video using all our
+                    creativity.{% endblocktrans %}</p>
             </div>
         </div>
     </div>
@@ -28,15 +51,18 @@
     <div class="works-filter-block works-portfolio">
         <input checked type="radio" id="radio-filter-all" name="radio-filter">
         <label onclick="isoFilter(`:not([data-iso-all='ignore'])`)" class="radio-filter-label"
-               for="radio-filter-all">ALL</label>
+               for="radio-filter-all">{% blocktrans %}ALL{% endblocktrans %}</label>
         <input type="radio" id="radio-filter-commercial" name="radio-filter">
-        <label onclick="isoFilter(`[data-iso-type='com']`)" class="radio-filter-label" for="radio-filter-commercial">COMMERCIAL</label>
+        <label onclick="isoFilter(`[data-iso-type='com']`)" class="radio-filter-label" for="radio-filter-commercial">
+            {% blocktrans %}COMMERCIAL{% endblocktrans %}</label>
         <input type="radio" id="radio-filter-tv" name="radio-filter">
-        <label onclick="isoFilter(`[data-iso-type='tv']`)" class="radio-filter-label" for="radio-filter-tv">TV</label>
+        <label onclick="isoFilter(`[data-iso-type='tv']`)" class="radio-filter-label" for="radio-filter-tv">
+            {% blocktrans %}TV{% endblocktrans %}</label>
         <input type="radio" id="radio-filter-creative" name="radio-filter">
-        <label onclick="isoFilter(`[data-iso-type='cr']`)" class="radio-filter-label" for="radio-filter-creative">CREATIVE</label>
+        <label onclick="isoFilter(`[data-iso-type='cr']`)" class="radio-filter-label" for="radio-filter-creative">
+            {% blocktrans %}CREATIVE{% endblocktrans %}</label>
 
-</div>
+    </div>
 </div>
 <div class="site-section" style="padding: 1em 0 0 0;">
     <div class="container">
@@ -45,7 +71,7 @@
             <div data-iso-type="com" data-iso-all="ignore" class="iso-item blank-work col-md-6 col-lg-4 mb-5 mb-lg-5">
                 <div class="blank">
                     <div class="p-2 text">
-                        <p class="text-uppercase text-white h2">commercial</p>
+                        <p class="text-uppercase text-white h2">{% blocktrans %}commercial{% endblocktrans %}</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +79,7 @@
             <div data-iso-type="tv" data-iso-all="ignore" class="iso-item blank-work col-md-6 col-lg-4 mb-5 mb-lg-5">
                 <div class="blank">
                     <div class="p-2 text">
-                        <p class="text-uppercase text-white h2">tv</p>
+                        <p class="text-uppercase text-white h2">{% blocktrans %}tv{% endblocktrans %}</p>
                     </div>
                 </div>
             </div>
@@ -61,27 +87,27 @@
             <div data-iso-type="cr" data-iso-all="ignore" class="iso-item blank-work col-md-6 col-lg-4 mb-5 mb-lg-5">
                 <div class="blank">
                     <div class="p-2 text">
-                        <p class="text-uppercase text-white h2">creative</p>
+                        <p class="text-uppercase text-white h2">{% blocktrans %}creative{% endblocktrans %}</p>
                     </div>
                 </div>
             </div>
-{% for item in projects %}
-    <a href="{% url 'work' item.slug %}">
-            <div data-iso-type="{{ item.category }}" class="iso-item col-md-6 col-lg-4 mb-5 mb-lg-5">
-                <div class="team-member">
+            {% for item in projects %}
+                <a href="{% url 'work' item.slug %}">
+                    <div data-iso-type="{{ item.category }}" class="iso-item col-md-6 col-lg-4 mb-5 mb-lg-5">
+                        <div class="team-member">
 
-                    <img src="{{ item.image.url }}" alt="Image" class="img-fluid">
+                            <img src="{{ item.image.url }}" alt="Image" class="img-fluid">
 
-                    <div class="text">
+                            <div class="text">
 
-                        <h2 class="mb-2 font-weight-light h4">{{ item.title}}</h2>
-                        <span class="d-block mb-2 text-white-opacity-05">{{ item.description_short }}</span>
+                                <h2 class="mb-2 font-weight-light h4">{{ item.title }}</h2>
+                                <span class="d-block mb-2 text-white-opacity-05">{{ item.description_short }}</span>
+                            </div>
+
+                        </div>
                     </div>
-
-                </div>
-            </div>
-    </a>
-{% endfor %}
+                </a>
+            {% endfor %}
         </div>
     </div>
 </div>

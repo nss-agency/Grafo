@@ -1,10 +1,12 @@
+{% load i18n %}
 <footer class="site-footer">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-4">
                 <div class="mb-5">
-                    <h3 class="footer-heading mb-4">About Create</h3>
-                    <p>Create is based in the beautiful city of Lviv, where historical buildings hide a buzzing party, food and art scene.</p>
+                    <h3 class="footer-heading mb-4">{% blocktrans %}About Grafo{% endblocktrans %}</h3>
+                    <p>{% blocktrans %}Grafo studio is based in the beautiful city of Lviv, where historical buildings hide a buzzing
+                        party, food and art scene.{% endblocktrans %}</p>
                 </div>
 
 
@@ -13,27 +15,32 @@
             <div class="col-lg-4 mb-5 mb-lg-0 d-flex justify-content-end ">
                 <div class="row mb-3">
                     <div class="col-md-12">
-                        <h3 class="footer-heading mb-4">Navigations</h3>
+                        <h3 class="footer-heading mb-4">{% blocktrans %}Navigations{% endblocktrans %}</h3>
                     </div>
                     <div class="col-md-6 col-lg-6">
                         <ul class="list-unstyled">
-                            <li><a href="{% url 'index' %}">Home</a></li>
-                            <li><a href="{% url 'works' %}">Our Works</a></li>
-                            <li><a href="{% url 'about' %}">About</a></li>
-                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'index' %}">{% blocktrans %}Home{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'works' %}">{% blocktrans %}Our Works{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'about' %}">{% blocktrans %}About{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'contact' %}">{% blocktrans %}Contact{% endblocktrans %}</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="footer-heading mb-4">Follow Us</h3>
+                        <h3 class="footer-heading mb-4">{% blocktrans %}Follow Us{% endblocktrans %}</h3>
 
                         <div class="d-flex">
-                            <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-behance"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                            <a href="#" class="pl-3 pr-3"><span class="icon-vimeo"></span></a>
+                            <a href="https://www.facebook.com/Grafo-studio-108815584139126" class="pl-0 pr-3"><span
+                                    class="icon-facebook"></span></a>
+                            <a href="https://www.behance.net/grafo_studio" class="pl-3 pr-3"><span
+                                    class="icon-behance"></span></a>
+                            <a href="https://www.instagram.com/grafo_studio/" class="pl-3 pr-3"><span
+                                    class="icon-instagram"></span></a>
+                            <a href="https://www.youtube.com/channel/UCqi_zCskRtFbAZ8bnjUfrEw" class="pl-3 pr-3"><span
+                                    class="icon-youtube"></span></a>
+                            <a href="https://vimeo.com/user113729183" class="pl-3 pr-3"><span class="icon-vimeo"></span></a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +53,7 @@
                 <p>
                     Copyright &copy;<script>document.write(new Date().getFullYear());</script>
                     All rights reserved | Made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a
-                        href="" target="_blank">Night Sky Studios</a>
+                        href="https://www.instagram.com/nss.agency" target="_blank">NSS Agency</a>
                 </p>
             </div>
 

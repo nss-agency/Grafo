@@ -3,8 +3,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{ project.title }} | Create</title>
+    <title>{{ project.title }} | Grafo Studio</title>
     <meta charset="utf-8">
+    <meta property="og:site_name" content="Grafo Studio"/>
+    <meta property="og:title" content="{{ project.title }} | Grafo Studio"/>
+    <meta property="og:description"
+          content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
+    <meta property="og:url" content="https://grafo.studio/{{ project.slug }}">
+    <meta property="og:type" content="animation studio"/>
+    <meta property="og:image" content="{{ project.image.url }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@NightSkyStudio" />
+<meta property="og:url" content="https://grafo.studio/{{ project.slug }}" />
+<meta property="og:title" content="{{ project.title }} | Create Animation" />
+<meta property="og:description" content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world." />
+<meta property="og:image" content="{{ project.image.url }}" />
+    <meta name="description"
+          content="Grafo is a studio specializing in 2D animation. Founded by a team of like-minded people, with unlimited imagination and desire to create original content. We can take care of your business starting with an great idea, and finishing with a completed project.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+          content="2d, 2d animation, 2d art, 2d advertisement, advertisement, animation studio, animation"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% include 'includes/head_links.html' %}
 </head>
@@ -25,8 +46,8 @@
 </div>
 
 <div class="site-section">
-    <div class="container">
-        <div style="padding:56.25% 0 0 0;position:relative;">
+    <div class="container mt-5">
+         <div style="padding:56.25% 0 0 0;position:relative;">
             <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;"
                     src="{{ project.video_url}}" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

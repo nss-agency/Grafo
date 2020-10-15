@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -25,12 +24,19 @@ SECRET_KEY = '2z3t_sc#xi%q5v@#=+r4i5gcm@vx%-=0(5y-bsnfl74z%4s-a3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+if not DEBUG:
+    PREPEND_WWW = False
+    BASE_URL = "https://grafo.studio/"
 
+if DEBUG:
+    ALLOWED_HOSTS = []
+else:
+    ALLOWED_HOSTS = ['https://grafo.studio', 'https://www.grafo.studio', 'www.grafo.studio', 'grafo.studio']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,12 +50,21 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+if not DEBUG:
+    CSRF_COOKIE_SECURE = True
+    X_FRAME_OPTIONS = "DENY"
+    SESSION_COOKIE_SECURE = True
+    SECURE_SSL_REDIRECT = True
+    SECURE_BROWSER_XSS_FILTER = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
 
 ROOT_URLCONF = 'Create_Animation.urls'
 
@@ -72,7 +87,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Create_Animation.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -82,7 +96,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -102,11 +115,23 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
+
+LANGUAGES = (
+    ('uk', 'Ukrainian'),
+    ('en', 'English'),
+    ('de', 'Deutsch'),
+)
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'uk'
+
+LOCALE_PATHS = (
+    'locale',
+    # os.path.join(PROJECT_DIR, 'locale'),
+)
 
 TIME_ZONE = 'UTC'
 
@@ -116,28 +141,35 @@ USE_L10N = True
 
 USE_TZ = True
 
+FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o755
+FILE_UPLOAD_PERMISSIONS = 0o644
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-GOOGLE_RECAPTCHA_SECRET_KEY = '*****'
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LdeXfwUAAAAAF0_xFcwNPKz95CeBjspP9RSj57Y'
 
 STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+if not DEBUG:
+    STATIC_ROOT = '/home/grafostu/public_html/static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
+if not DEBUG:
+    MEDIA_ROOT = '/home/grafostu/public_html/media'
+else:
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_USE_SSL = True
-EMAIL_HOST = 'createanimation.co'
+EMAIL_HOST = 'grafo.studio'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'noreply@createanimation.co'
-EMAIL_HOST_PASSWORD = '***'
+EMAIL_HOST_USER = 'noreply@grafo.studio'
+EMAIL_HOST_PASSWORD = ']1-,iK%Mc0}1'
 
 TINYMCE_JS_URL = os.path.join("", "js/tinymce/tinymce.min.js")
 TINYMCE_JS_ROOT = os.path.join("", "js/tinymce")
@@ -146,7 +178,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'width': 1120,
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 20,
-    'selector': 'textarea#id_description',
+    'selector': 'textarea#id_description_uk, textarea#id_description_en, textarea#id_description_de',
     'theme': 'silver',
     'plugins': '''
             textcolor,save,link,image,media,preview,codesample,contextmenu,

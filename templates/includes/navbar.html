@@ -1,3 +1,10 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_language_info for LANGUAGE_CODE as current_language %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+
 <div class="site-wrap">
     <div class="site-navbar bg-main" data-aos="fade-up" data-aos-anchor="#nav-anchor"
          data-aos-anchor-placement="top-top">
@@ -5,7 +12,8 @@
             <div class="row align-items-center">
                 <div class="col-8 col-md-8 col-lg-4">
                     <h1 class="mb-0 ml-5"><a href="{% url 'index' %}" class="text-white h2 mb-0">
-                        <img class="navbar_logo" src="{{ static }}images/create_white.svg" alt="">
+                        <img class="navbar_logo" data-swap="{{ static }}images/animated_logo.gif"
+                             src="{{ static }}images/create_white.svg" alt="">
                     </a>
                     </h1>
                 </div>
@@ -15,9 +23,23 @@
                             <a href="#" class="site-menu-toggle js-menu-toggle text-white mr-5 ">
                                 <span class="icon-menu h1"></span></a></div>
                         <ul class="site-menu js-clone-nav d-none d-lg-none">
-                            <li><a href="{% url 'about' %}">About</a></li>
-                            <li><a href="{% url 'works' %}">Works</a></li>
-                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                            <li><a href="{% url 'about' %}">{% blocktrans %}About{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'works' %}">{% blocktrans %}Works{% endblocktrans %}</a></li>
+                            <li><a href="{% url 'contact' %}">{% blocktrans %}Get in touch{% endblocktrans %}</a></li>
+                            <li class="mt-3"><label class="language-label btn-outline"
+                                                          for="language-picker">{% blocktrans %}Language{% endblocktrans %}: {{ current_language.name_translated }}</label>
+                                <input hidden id="language-picker" type="checkbox">
+                                <form action="{% url 'set_language' %}" method="post" class="languages-dropdown">
+                                    {% csrf_token %}
+                                    <input name="next" type="hidden" value="{{ redirect_to }}">
+                                    {% for language in languages %}
+                                        {% if language.code != current_language.code %}
+                                            <button id="language" name="language" value="{{ language.code }}"
+                                                    class="language-button btn btn-outline">{{ language.name_translated }}</button>
+                                        {% endif %}
+                                    {% endfor %}
+                                </form>
+                            </li>
                         </ul>
                     </nav>
                 </div>

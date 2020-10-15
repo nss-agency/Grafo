@@ -5,7 +5,7 @@
         <span class="poster-header">Happy 4th of July</span>
         <br>
         “If there is no struggle, there is no progress.”<br>
-        —Frederick Douglass
+        — Frederick Douglass
     </div>
     <div class="poster-buttons">
         <a href="{% static 'downloadables/poster.mp4' %}" download="poster" class="btn poster-btn-generic poster-download-button">
@@ -26,8 +26,6 @@
         let deadLine = new Date(`July 7, 2020 00:00:00 GMT${offsetInHours}:00`)
         let storage_value = localStorage.getItem('create_poster_modal_closing');
 
-        console.log('today ', today)
-        console.log('deadline  ', deadLine)
 
         if (today < deadLine && storage_value === null)
             document.querySelector('#poster-modal').classList.add('poster-active')

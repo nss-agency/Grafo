@@ -103,7 +103,7 @@
 }
 
 .video-hero {
-	position: absolute;
+	position: fixed;
 	z-index: -1;
 	top: 0;
 	left: 50%;
@@ -115,11 +115,6 @@
 	height: 110vh;
 }
 
-.hero-index {
-	@media only screen and (max-width: 800px) {
-		display: none;
-	}
-}
 
 .pricing-video-container {
 	height: 350px;
@@ -223,5 +218,22 @@
 	&:before {
 		left: 50%;
 		transform: translateX(-50%);
+	}
+}
+
+.language-label {
+	cursor: default;
+}
+
+.language-button{
+	background: #090627;
+	color: #fff;
+	transition: color .3s ease-in-out;
+	margin: 10px 0;
+    padding: 12px;
+    min-width: 160px;
+
+	&:hover{
+		color: #FF0088;
 	}
 }
