@@ -1,22 +1,19 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-15 18:12+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2020-10-16 12:43+0300\n"
+"PO-Revision-Date: 2020-10-16 09:37+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: Unknown\n"
+"Language: zxx\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Loco-Source-Locale: uk_UA\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Generator: Loco https://localise.biz/\n"
 
 #: core/models.py:10
 msgid "Commercial"
@@ -24,7 +21,7 @@ msgstr "Kommerziell"
 
 #: core/models.py:11 templates/works.html:60
 msgid "TV"
-msgstr "Fernseher"
+msgstr "TV"
 
 #: core/models.py:12
 msgid "Creative"
@@ -32,7 +29,7 @@ msgstr "Kreativ"
 
 #: templates/about.html:6 templates/about.html:41
 msgid "About Us"
-msgstr ""
+msgstr "Über Uns"
 
 #: templates/about.html:51
 msgid ""
@@ -46,6 +43,15 @@ msgid ""
 "                    videos, TV series, music videos, and our own creative "
 "projects. We animate the world."
 msgstr ""
+"Wir geben alles durch unser 2d Prisma aus und drehen die Realität um\n"
+"                     in 2D-Animation, wo keine Einschränkungen für Ihre "
+"Fantasie, wo Sie alles erstellen können, was Sie wollen. Unsere\n"
+"                     Das Team besteht aus Regisseuren, Künstlern und "
+"Animatoren, die wie eine gut geölte Maschine arbeiten. Unsere Priorität ist\n"
+"                     immer die Qualität der Arbeit. Wir verwandeln unsere "
+"Leidenschaft in originelle Dinge wie Werbung, Erklären\n"
+"                     Videos, TV-Serien, Musikvideos und unsere eigenen "
+"kreativen Projekte. Wir animieren die Welt."
 
 #: templates/about.html:65 templates/index.html:166
 msgid "Our Team"
@@ -58,10 +64,14 @@ msgid ""
 "                    the success\n"
 "                    of any project"
 msgstr ""
+"Die Kombination eines richtig geleiteten Teams und des richtigen Einsatzes "
+"von Kreativität ist ein Rezept für\n"
+"                     der Erfolg\n"
+"                     von jedem Projekt"
 
 #: templates/about.html:153 templates/index.html:270
 msgid "THEY CHOOSE US"
-msgstr ""
+msgstr "SIE WÄHLEN UNS"
 
 #: templates/contact.html:6 templates/includes/nav.html:27
 #: templates/includes/navbar.html:28
@@ -74,28 +84,42 @@ msgid ""
 "                    Company\n"
 "                    details"
 msgstr ""
+"\n"
+"                    Unternehmen\n"
+"                    Einzelheiten"
 
 #: templates/contact.html:47
 msgid "Number(Telegram)"
-msgstr "Nummer(Telegramm)"
+msgstr "Nummer(Telegram)"
+
+#: templates/contact.html:50
+msgid "Location"
+msgstr "Ort"
 
 #: templates/contact.html:50
 msgid ""
 "Lviv.\n"
 "                        Ukraine"
 msgstr ""
+"Lviv.\n"
+"                         Ukraine"
 
 #: templates/contact.html:73
 msgid ""
 "Thank you for writing us. We will contact you as soon as\n"
 "                        possible"
 msgstr ""
+"Danke, dass Sie uns geschrieben haben. Wir werden uns umgehend bei Ihnen "
+"melden\n"
+"                         möglich"
 
 #: templates/contact.html:77
 msgid ""
 "Invalid reCAPTCHA. Please try\n"
 "                        again."
 msgstr ""
+"Ungültiges reCAPTCHA. Bitte versuche\n"
+"                         nochmal."
 
 #: templates/contact.html:80
 msgid ""
@@ -103,10 +127,13 @@ msgid ""
 "                    YES, we'd like to\n"
 "                    direct a commercial for you."
 msgstr ""
+"\n"
+"                    JA, wir möchten\n"
+"                    Regie für Sie."
 
 #: templates/contact.html:85
 msgid "Feel free to drop us a line anytime."
-msgstr ""
+msgstr "Sie können uns jederzeit eine Nachricht senden."
 
 #: templates/contact.html:91
 msgid "First Name"
@@ -118,7 +145,7 @@ msgstr "Nachname"
 
 #: templates/contact.html:101
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: templates/contact.html:104
 msgid "Your message here"
@@ -130,7 +157,7 @@ msgstr "Einreichen"
 
 #: templates/contact.html:111
 msgid "Brief"
-msgstr ""
+msgstr "Kurz"
 
 #: templates/includes/footer.html:7
 msgid "About Grafo"
@@ -142,6 +169,9 @@ msgid ""
 "buildings hide a buzzing\n"
 "                        party, food and art scene."
 msgstr ""
+"Das Grafo Studio befindet sich in der wunderschönen Stadt Lviv, wo "
+"historische Gebäude ein Summen verbergen\n"
+"                         Party, Food  und Kunstszene."
 
 #: templates/includes/footer.html:18
 msgid "Navigations"
@@ -154,7 +184,7 @@ msgstr "Home"
 #: templates/includes/footer.html:23 templates/index.html:79
 #: templates/works.html:42
 msgid "Our Works"
-msgstr ""
+msgstr "Unsere Arbeiten"
 
 #: templates/includes/footer.html:24 templates/includes/nav.html:25
 #: templates/includes/navbar.html:26
@@ -167,12 +197,12 @@ msgstr "Kontakt"
 
 #: templates/includes/footer.html:32
 msgid "Follow Us"
-msgstr ""
+msgstr "Folge uns"
 
 #: templates/includes/nav.html:26 templates/includes/navbar.html:27
 #: templates/works.html:6
 msgid "Works"
-msgstr ""
+msgstr "Funktioniert"
 
 #: templates/includes/nav.html:29 templates/includes/navbar.html:30
 msgid "Language"
@@ -190,12 +220,24 @@ msgid ""
 "                        animation to produce a high-quality product. See our "
 "full "
 msgstr ""
+"Grafo ist ein Studio, das sich auf 2D-Animation spezialisiert hat.\n"
+"                         Gegründet von einem Team von Gleichgesinnten mit "
+"unbegrenzter Fantasie und dem Wunsch zu kreieren\n"
+"                         Originalinhalt. Wir können uns um Ihr Geschäft "
+"kümmern, beginnend mit einer großartigen Idee und endend\n"
+"                         mit einem abgeschlossenen Projekt. Wir nutzen "
+"unsere Fähigkeiten im Geschichtenerzählen, im Bewegungsdesign und Bild für "
+"Bild\n"
+"                         Animation, um ein qualitativ hochwertiges Produkt "
+"zu produzieren. Sehen Sie unsere volle"
 
 #: templates/index.html:69
 msgid ""
 "portfolio\n"
 "                            →"
 msgstr ""
+"portfolio\n"
+"                            →"
 
 #: templates/index.html:80
 msgid ""
@@ -203,12 +245,17 @@ msgid ""
 "original, effective, and\n"
 "                        interesting to watch."
 msgstr ""
+"Wir werden Ihr Video mit all unserer Kreativität angehen. Dinge originell, "
+"effektiv und effektiv machen\n"
+"                         interessant zu sehen."
 
 #: templates/index.html:105
 msgid ""
 "MORE\n"
 "                                &blacktriangleright;"
 msgstr ""
+"MEHR\n"
+"                                &blacktriangleright;"
 
 #: templates/index.html:167
 msgid ""
@@ -217,80 +264,86 @@ msgid ""
 "                        success\n"
 "                        of any project"
 msgstr ""
+"Die Kombination eines richtig geleiteten Teams und des richtigen Einsatzes "
+"von Kreativität ist ein Rezept für die\n"
+"                         Erfolg\n"
+"                         von jedem Projekt"
 
 #: templates/index.html:178
 msgid "Ostap"
-msgstr ""
+msgstr "Ostap"
 
 #: templates/index.html:179
 msgid "Creative Director"
-msgstr ""
+msgstr "Creative Director"
 
 #: templates/index.html:189
 msgid "Nastya"
-msgstr ""
+msgstr "Nastya"
 
 #: templates/index.html:190
 msgid "Artist Animator"
-msgstr ""
+msgstr "Künstler Animator"
 
 #: templates/index.html:200
 msgid "Anastasiia"
-msgstr ""
+msgstr "Anastasiia"
 
 #: templates/index.html:201
 msgid "Motion Designer"
-msgstr ""
+msgstr "Motion Designer"
 
 #: templates/index.html:211
 msgid "Vlada"
-msgstr ""
+msgstr "Vlada"
 
 #: templates/index.html:212
 msgid "Artist"
-msgstr ""
+msgstr "Künstlerin"
 
 #: templates/index.html:221
 msgid "Yakub"
-msgstr ""
+msgstr "Yakub"
 
 #: templates/index.html:222
 msgid "3D Animator"
-msgstr ""
+msgstr "3D Animator"
 
 #: templates/index.html:231
 msgid "Svyatoslav"
-msgstr ""
+msgstr "Svyatoslav"
 
 #: templates/index.html:232
 msgid "Game Animator"
-msgstr ""
+msgstr "Spielanimator"
 
 #: templates/index.html:241
 msgid "Dima"
-msgstr ""
+msgstr "Dima"
 
 #: templates/index.html:242
 msgid "Artist and Animator"
-msgstr ""
+msgstr "Künstler und Animator"
 
 #: templates/index.html:252
 msgid "Steve"
-msgstr ""
+msgstr "Finn"
 
 #: templates/index.html:253
 msgid "Favourite Manager"
-msgstr ""
+msgstr "Lieblingsmanager"
 
 #: templates/index.html:262
 msgid "about us"
-msgstr ""
+msgstr "Über uns"
 
 #: templates/works.html:43
 msgid ""
 "We will approach your video using all our\n"
 "                    creativity."
 msgstr ""
+"Wir werden Ihr Video mit all unseren Mitteln bearbeiten\n"
+"                     Kreativität."
 
 #: templates/works.html:54
 msgid "ALL"
@@ -310,7 +363,7 @@ msgstr "KOMMERZIELL"
 
 #: templates/works.html:82
 msgid "tv"
-msgstr "Fernseher"
+msgstr "tv"
 
 #: templates/works.html:90
 msgid "creative"
