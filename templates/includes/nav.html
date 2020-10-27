@@ -11,7 +11,7 @@
             <div class="row align-items-center">
                 <div class="col-8 col-md-8 col-lg-4">
                     <h1 class="mb-0 ml-5"><a href="{% url 'index' %}" class="text-white h2 mb-0">
-                         <img  class="navbar_logo" data-swap="{{ static }}images/animated_logo.gif"
+                        <img class="navbar_logo" data-swap="{{ static }}images/animated_logo.gif"
                              src="{{ static }}images/create_white.svg" alt="">
                     </a>
                     </h1>
@@ -24,9 +24,12 @@
                         <ul class="site-menu js-clone-nav d-none d-lg-none">
                             <li><a href="{% url 'about' %}">{% blocktrans %}About{% endblocktrans %}</a></li>
                             <li><a href="{% url 'works' %}">{% blocktrans %}Works{% endblocktrans %}</a></li>
+                                                    <li><a href="{% url 'services' %}">{% blocktrans %}Services{% endblocktrans %}</a></li>
                             <li><a href="{% url 'contact' %}">{% blocktrans %}Get in touch{% endblocktrans %}</a></li>
-                             <li class="mt-3"><label class="language-label btn-outline"
-                                                          for="language-picker">{% blocktrans %}Language{% endblocktrans %}: {{ current_language.name_translated }}</label>
+
+                            <li class="mt-3"><label class="language-label btn-outline"
+                                                    for="language-picker">{% blocktrans %}Language{% endblocktrans %}
+                                : {{ current_language.name_translated }}</label>
                                 <input hidden id="language-picker" type="checkbox">
                                 <form action="{% url 'set_language' %}" method="post" class="languages-dropdown">
                                     {% csrf_token %}

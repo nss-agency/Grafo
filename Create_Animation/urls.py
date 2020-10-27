@@ -13,6 +13,7 @@ urlpatterns = i18n_patterns(
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
     path('works/', views.works, name='works'),
+    path('services/', views.services, name='services'),
     path('contact/', views.contact, name='contact'),
     re_path(r'work/(?P<slug>[\w-]+)/$', views.work, name='work'),
     path(r'tinymce/', include('tinymce.urls')),

@@ -63,3 +63,10 @@ def work(request, slug):
     }
 
     return render(request, 'work.html', ctx)
+
+
+def services(request):
+    ctx = {
+        'partners': Partner.objects.all(),
+    }
+    return render(request, 'services.html', ctx)
