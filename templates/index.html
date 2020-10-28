@@ -142,33 +142,33 @@
 
                 <div class="col-md-4 col-lg-4 mb-5 mb-lg-5">
                     <a class="services-index__link" href="{% url 'services' %}">
-                    <div class="pricing-video-container">
-                        <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
-                            <source src="{% static 'video/pricing_motion_video.mp4' %}" type="video/mp4">
-                        </video>
-                        <div class="pricing-video-overlay">
-                            <div class="pricing-video-overlay-text">
-                                <span class="pricing-title">Animation</span>
-                                {#                                <span class="pricing-price">50$ per second</span>#}
+                        <div class="pricing-video-container">
+                            <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
+                                <source src="{% static 'video/pricing_motion_video.mp4' %}" type="video/mp4">
+                            </video>
+                            <div class="pricing-video-overlay">
+                                <div class="pricing-video-overlay-text">
+                                    <span class="pricing-title">Animation</span>
+                                    {#                                <span class="pricing-price">50$ per second</span>#}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                         </a>
+                    </a>
                 </div>
                 <div class="col-md-4 col-lg-4 mb-5 mb-lg-5">
                     <a class="services-index__link" href="{% url 'services' %}">
-                    <div class="pricing-video-container">
-                        <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
-                            <source src="{% static 'video/pricing_video.mp4' %}" type="video/mp4">
-                        </video>
-                        <div class="pricing-video-overlay">
-                            <div class="pricing-video-overlay-text">
-                                <span class="pricing-title">Post Production</span>
-                                {#                                <span class="pricing-price per-second-after">100$ per second</span>#}
+                        <div class="pricing-video-container">
+                            <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
+                                <source src="{% static 'video/pricing_video.mp4' %}" type="video/mp4">
+                            </video>
+                            <div class="pricing-video-overlay">
+                                <div class="pricing-video-overlay-text">
+                                    <span class="pricing-title">Post Production</span>
+                                    {#                                <span class="pricing-price per-second-after">100$ per second</span>#}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                         </a>
+                    </a>
                 </div>
             </div>
         </div>
@@ -194,7 +194,20 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/team_animated/tymko.gif" alt="Image" class="img-fluid" loading="lazy">
+                        <img src="{{ static }}images/team_animated/tymko.gif" alt="Image" class="img-fluid"
+                             loading="lazy">
+                        <div class="text">
+
+                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Tymko{% endblocktrans %}</h2>
+                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Senior Animator{% endblocktrans %}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
+                    <div class="team-member">
+                        <img src="{{ static }}images/team_animated/ostap.gif" alt="Image" class="img-fluid"
+                             loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Ostap{% endblocktrans %}</h2>
@@ -206,22 +219,11 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/team_animated/ostap.gif" alt="Image" class="img-fluid" loading="lazy">
+                        <img src="{{ static }}images/team_animated/nastya_2.gif" alt="Image" class="img-fluid"
+                             loading="lazy">
                         <div class="text">
 
-                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Nastya{% endblocktrans %}</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Artist
-                                Animator{% endblocktrans %}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-                    <div class="team-member">
-                        <img src="{{ static }}images/team_animated/nastya_2.gif" alt="Image" class="img-fluid" loading="lazy">
-                        <div class="text">
-
-                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Anastasiia{% endblocktrans %}</h2>
+                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Nastia{% endblocktrans %}</h2>
                             <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Motion
                                 Designer{% endblocktrans %}</span>
                         </div>
@@ -230,62 +232,62 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/team_animated/kuba.gif" alt="Image" class="img-fluid" loading="lazy">
-                        <div class="text">
-
-                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Vlada{% endblocktrans %}</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}
-                                Artist{% endblocktrans %}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
-                    <div class="team-member">
-                        <img src="{{ static }}images/team_animated/dasha.gif" alt="Image" class="img-fluid" loading="lazy">
+                        <img src="{{ static }}images/team_animated/kuba.gif" alt="Image" class="img-fluid"
+                             loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Yakub{% endblocktrans %}</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}3D
-                                Animator{% endblocktrans %}</span>
+                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}3D Animator{% endblocktrans %}</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/team_animated/svyatik.gif" alt="Image" class="img-fluid" loading="lazy">
+                        <img src="{{ static }}images/team_animated/dasha.gif" alt="Image" class="img-fluid"
+                             loading="lazy">
                         <div class="text">
 
-                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Svyatoslav{% endblocktrans %}</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Game
-                                Animator{% endblocktrans %}</span>
+                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Dashka{% endblocktrans %}</h2>
+                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Illustrator{% endblocktrans %}</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/team_animated/vika.gif" alt="Image" class="img-fluid" loading="lazy">
+                        <img src="{{ static }}images/team_animated/svyatik.gif" alt="Image" class="img-fluid"
+                             loading="lazy">
                         <div class="text">
 
-                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Dima{% endblocktrans %}</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Artist and
-                                Animator{% endblocktrans %}</span>
+                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Svyatik{% endblocktrans %}</h2>
+                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Business Development Manager{% endblocktrans %}</span>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/about/2.jpg" alt="Image" class="img-fluid" loading="lazy">
+                        <img src="{{ static }}images/team_animated/vika.gif" alt="Image" class="img-fluid"
+                             loading="lazy">
                         <div class="text">
 
-                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Steve{% endblocktrans %}</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Favourite
-                                Manager{% endblocktrans %}</span>
+                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Vicky{% endblocktrans %}</h2>
+                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Junior Motion Designer{% endblocktrans %}</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
+{#                <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">#}
+{#                    <div class="team-member">#}
+{#                        <img src="{{ static }}images/about/2.jpg" alt="Image" class="img-fluid" loading="lazy">#}
+{#                        <div class="text">#}
+{##}
+{#                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Steve{% endblocktrans %}</h2>#}
+{#                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Favourite#}
+{#                                Manager{% endblocktrans %}</span>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+
+                <div class="col-md-6 col-lg-8 mb-5 mb-lg-5">
                     <div class="more-button">
 
                         <div class="text">
