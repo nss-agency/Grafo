@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="400">
-                        <img src="{{ static }}images/create_white.svg" alt="">
+                        <img src="{{ static }}images/create_white.svg" alt="" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -68,10 +68,7 @@
                         Founded by a team of like-minded people, with unlimited imagination and desire to create
                         original content. We can take care of your business starting with an great idea, and finishing
                         with a completed project. We use our skills of storytelling, motion design, and frame by frame
-                        animation to produce a high-quality product. See our full {% endblocktrans %} <a
-                            class="text-uppercase a-index"
-                            href="{% url 'works' %}">{% blocktrans %}portfolio
-                        →{% endblocktrans %}</a></p>
+                        animation to produce a high-quality product.{% endblocktrans %}</p>
                 </div>
             </div>
         </div>
@@ -92,7 +89,7 @@
                        class="col-md-6 col-lg-{% cycle '7' '5' '3' '6' '3' '7' '5' as project_size %} mb-5 mb-lg-5">
                         <div class="team-member">
 
-                            <img src="{{ project.image.url }}" alt="Image" class="img-fluid">
+                            <img src="{{ project.image.url }}" alt="Image" class="img-fluid" loading="lazy">
 
                             <div class="text center align-center">
 
@@ -122,26 +119,29 @@
         <div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-                    <h2 class="mb-5">Our Services</h2>
+                    <h2 class="mb-5">What we do</h2>
                     <p></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 col-lg-4 mb-5 mb-lg-5">
-                    <div class="pricing-video-container">
-                        <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
-                            <source src="{% static 'video/pricing_video.mp4' %}" type="video/mp4">
-                        </video>
-                        <div class="pricing-video-overlay">
-                            <div class="pricing-video-overlay-text">
-                                <span class="pricing-title">Illustration</span>
-{#                                <span class="pricing-price per-second-after">100$ per second</span>#}
+                    <a class="services-index__link" href="{% url 'services' %}">
+                        <div class="pricing-video-container">
+                            <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
+                                <source src="{% static 'video/pricing_video.mp4' %}" type="video/mp4">
+                            </video>
+                            <div class="pricing-video-overlay">
+                                <div class="pricing-video-overlay-text">
+                                    <span class="pricing-title">Illustration</span>
+                                    {#                                <span class="pricing-price per-second-after">100$ per second</span>#}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col-md-4 col-lg-4 mb-5 mb-lg-5">
+                    <a class="services-index__link" href="{% url 'services' %}">
                     <div class="pricing-video-container">
                         <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
                             <source src="{% static 'video/pricing_motion_video.mp4' %}" type="video/mp4">
@@ -149,12 +149,14 @@
                         <div class="pricing-video-overlay">
                             <div class="pricing-video-overlay-text">
                                 <span class="pricing-title">Animation</span>
-{#                                <span class="pricing-price">50$ per second</span>#}
+                                {#                                <span class="pricing-price">50$ per second</span>#}
                             </div>
                         </div>
                     </div>
+                         </a>
                 </div>
                 <div class="col-md-4 col-lg-4 mb-5 mb-lg-5">
+                    <a class="services-index__link" href="{% url 'services' %}">
                     <div class="pricing-video-container">
                         <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
                             <source src="{% static 'video/pricing_video.mp4' %}" type="video/mp4">
@@ -162,20 +164,11 @@
                         <div class="pricing-video-overlay">
                             <div class="pricing-video-overlay-text">
                                 <span class="pricing-title">Post Production</span>
-{#                                <span class="pricing-price per-second-after">100$ per second</span>#}
+                                {#                                <span class="pricing-price per-second-after">100$ per second</span>#}
                             </div>
                         </div>
                     </div>
-                </div>
-                  <div class=" col-lg-12 mb-5 mb-lg-5">
-                    <div class="more-button">
-
-                        <div class="text">
-                            <h2 class="mb-2 font-weight-bold fs2"><a href="{% url 'services' %}">{% blocktrans %}MORE
-                                &blacktriangleright;{% endblocktrans %}</a></h2>
-                        </div>
-
-                    </div>
+                         </a>
                 </div>
             </div>
         </div>
@@ -201,7 +194,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/about/ostap.png" alt="Image" class="img-fluid">
+                        <img src="{{ static }}images/team_animated/tymko.gif" alt="Image" class="img-fluid" loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Ostap{% endblocktrans %}</h2>
@@ -213,7 +206,7 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/about/Nastya.png" alt="Image" class="img-fluid">
+                        <img src="{{ static }}images/team_animated/ostap.gif" alt="Image" class="img-fluid" loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Nastya{% endblocktrans %}</h2>
@@ -225,7 +218,7 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/about/Anastasiia.png" alt="Image" class="img-fluid">
+                        <img src="{{ static }}images/team_animated/nastya_2.gif" alt="Image" class="img-fluid" loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Anastasiia{% endblocktrans %}</h2>
@@ -237,7 +230,7 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/about/Vlada.png" alt="Image" class="img-fluid">
+                        <img src="{{ static }}images/team_animated/kuba.gif" alt="Image" class="img-fluid" loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Vlada{% endblocktrans %}</h2>
@@ -248,7 +241,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/about/Yakub.png" alt="Image" class="img-fluid">
+                        <img src="{{ static }}images/team_animated/dasha.gif" alt="Image" class="img-fluid" loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Yakub{% endblocktrans %}</h2>
@@ -259,7 +252,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/about/Svyatoslav.png" alt="Image" class="img-fluid">
+                        <img src="{{ static }}images/team_animated/svyatik.gif" alt="Image" class="img-fluid" loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Svyatoslav{% endblocktrans %}</h2>
@@ -270,7 +263,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/about/Dima.png" alt="Image" class="img-fluid">
+                        <img src="{{ static }}images/team_animated/vika.gif" alt="Image" class="img-fluid" loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Dima{% endblocktrans %}</h2>
@@ -282,7 +275,7 @@
 
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
                     <div class="team-member">
-                        <img src="{{ static }}images/about/2.jpg" alt="Image" class="img-fluid">
+                        <img src="{{ static }}images/about/2.jpg" alt="Image" class="img-fluid" loading="lazy">
                         <div class="text">
 
                             <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Steve{% endblocktrans %}</h2>
@@ -310,7 +303,8 @@
                 {% for item in partners %}
                     <div class="partners-grid-wraper">
                         <a target="_blank" href="{{ item.link }}">
-                            <img class="partners-grid-item" src="{{ item.image.url }}" alt="{{ item.name }}">
+                            <img class="partners-grid-item" src="{{ item.image.url }}" alt="{{ item.name }}"
+                                 loading="lazy">
                         </a>
                     </div>
 

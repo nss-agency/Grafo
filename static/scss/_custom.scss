@@ -263,3 +263,13 @@
         font-size: 2rem;
     }
 }
+
+.services-index__link{
+    color: $white;
+    transition: color .3s ease-in;
+
+    &:hover{
+        color: $accent;
+    }
+
+}
