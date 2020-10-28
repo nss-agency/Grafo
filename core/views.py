@@ -10,10 +10,9 @@ def send_contact(request):
     subject = 'Message from website'
     message = request.POST.get('message', '')
     from_email = request.POST.get('email', '')
-    whatsapp = request.POST.get('whatsapp', '')
-    messages = 'Name and Surname: {} {} \nWhatsApp: {}\nFrom: {}\nMessage: \n{}\n\n\n\nSent From createanimation.co'.format(
-        fname, lname, whatsapp, from_email, message)
-    send_mail(subject, messages, 'noreply@createanimation.co', ['ostapcha@createanimation.co'], fail_silently=False)
+    messages = 'Name and Surname: {} {}\nFrom: {}\nMessage: \n{}\n\n\n\nSent From createanimation.co'.format(
+        fname, lname, from_email, message)
+    send_mail(subject, messages, 'noreply@grafo.studio', ['grafoanimation@gmail.com'], fail_silently=False)
 
 
 def index(request):
@@ -44,16 +43,17 @@ def works(request):
     return render(request, 'works.html', ctx)
 
 
-@check_recaptcha
+# @check_recaptcha
 def contact(request):
     ctx = {'success': False,
            'fail': False}
     if request.method == 'POST':
-        if request.recaptcha_is_valid:
-            send_contact(request)
-            ctx['success'] = True
-        else:
-            ctx['fail'] = True
+        send_contact(request)
+        # if request.recaptcha_is_valid:
+        #
+        #     ctx['success'] = True
+        # else:
+        #     ctx['fail'] = True
     return render(request, 'contact.html', ctx)
 
 

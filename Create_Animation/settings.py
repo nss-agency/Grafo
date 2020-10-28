@@ -134,10 +134,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_USE_SSL = True
-EMAIL_HOST = 'createanimation.co'
+EMAIL_HOST = 'grafo.studio'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'noreply@createanimation.co'
-EMAIL_HOST_PASSWORD = '***'
+EMAIL_HOST_USER = 'noreply@grafo.studio'
+EMAIL_HOST_PASSWORD = ']1-,iK%Mc0}1'
 
 TINYMCE_JS_URL = os.path.join("", "js/tinymce/tinymce.min.js")
 TINYMCE_JS_ROOT = os.path.join("", "js/tinymce")
