@@ -1,0 +1,125 @@
+{% load static i18n %}
+{% get_static_prefix as static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% blocktrans %}Get in touch{% endblocktrans %} | Grafo Studio</title>
+    <meta charset="utf-8">
+    <meta property="og:site_name" content="Grafo Studio"/>
+    <meta property="og:title" content="Get in touch | Grafo Studio"/>
+    <meta property="og:description"
+          content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
+    <meta property="og:url" content="https://grafo.studio/contact/">
+    <meta property="og:type" content="animation studio"/>
+    <meta property="og:image" content="{% static 'images/about/main_logo.png' %}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@NightSkyStudio"/>
+    <meta property="og:url" content="https://grafo.studio/contact/"/>
+    <meta property="og:title" content="Get in touch | Grafo Studio"/>
+    <meta property="og:description"
+          content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
+    <meta property="og:image" content="{% static 'images/about/main_logo.png' %}"/>
+    <meta name="description"
+          content="Grafo is a studio specializing in 2D animation. Founded by a team of like-minded people, with unlimited imagination and desire to create original content. We can take care of your business starting with an great idea, and finishing with a completed project.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+          content="2d, 2d animation, 2d art, 2d advertisement, advertisement, animation studio, animation"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% include 'includes/head_links.html' %}
+</head>
+<body>
+{% include 'includes/nav.html' %}
+
+
+<section class="margin-after-header-small">
+    <div class="contact-container" style="">
+        <img class="video-contact" src="{{ static }}images/frame_33.png" alt="">
+        <div class="contact-grid" style="/*background-image: url({% static 'img/index/1.jpg' %})*/ ">
+            <div class="contact-details text-center">
+                <h2 class="text-center section-intro__subtitle bottom-border align-items-center fs-2">{% blocktrans %}
+                    Company
+                    details{% endblocktrans %}</h2>
+                <ul style="margin-top: 35%;">
+                    <li>Email: <a class="link-pr" href="mailto:contact@grafo.studio">contact@grafo.studio</a></li>
+                    <li>{% blocktrans %}Number(Telegram){% endblocktrans %}: <a class="link-pr" target="_blank"
+                                                                                href="https://t.me/grafostudio">+38
+                        (068) 10 40 040</a></li>
+                    <li>{% blocktrans %}Location{% endblocktrans %}: <br> <a class="link-pr" href="https://bit.ly/2kzNn36" target="_blank">{% blocktrans %}Lviv.
+                        Ukraine{% endblocktrans %}</a>
+                        <br>
+                    <a class="link-pr" href="https://bit.ly/2kzNn36" target="_blank">{% blocktrans %}Kyiv.
+                        Ukraine, Borysa Hmyri St, 5{% endblocktrans %}</a>
+                    </li>
+                </ul>
+                <ul class="social-icons d-flex justify-content-around mt-2 mt-sm-0">
+                    <li><a class='link-pr' href="https://www.facebook.com/Grafo-studio-108815584139126" target="_blank"><span
+                            class="icon-facebook"></span></a></li>
+                    <li><a class='link-pr' href="https://instagram.com/grafo_studio" target="_blank"><span
+                            class="icon-instagram"></span></a>
+                    </li>
+                    <li><a class='link-pr' href="https://www.behance.net/grafo_studio" target="_blank"><span
+                            class="icon-behance"></span></a>
+                    </li>
+                    <li><a class='link-pr' href="https://www.youtube.com/channel/UCqi_zCskRtFbAZ8bnjUfrEw"
+                           target="_blank"><span class="icon-youtube"></span></a>
+                    </li>
+                    <li><a class='link-pr' href="https://vimeo.com/user113729183" target="_blank"><span
+                            class="icon-vimeo"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-grid-form ">
+                {% if success %}
+                    <div class="alert-success">{% blocktrans %}Thank you for writing us. We will contact you as soon as
+                        possible{% endblocktrans %}</div>
+                {% endif %}
+                {% if fail %}
+                    <div class="alert-fail">{% blocktrans %}Invalid reCAPTCHA. Please try
+                        again.{% endblocktrans %}</div>
+                {% endif %}
+                <h2 class="text-center section-intro__subtitle bottom-border align-items-center fs-2">{% blocktrans %}
+                    YES, we'd like to
+                    direct a commercial for you.{% endblocktrans %}
+                </h2>
+                <span style="text-transform: none;"
+                      class="text-white d-block text-center section-intro__title d-block">{% blocktrans %}Feel free to drop us a line anytime.{% endblocktrans %}</span>
+                <form method="post">
+
+                    {% csrf_token %}
+                    <div class="input-grid">
+                        <div class="input-group">
+                            <label class="full-label required" for="first_name">{% blocktrans %}First Name{% endblocktrans %}</label>
+                            <input required name="first_name" id="first_name" type="text">
+                        </div>
+                        <div class="input-group">
+                            <label class="full-label required" for="last_name">{% blocktrans %}Last Name{% endblocktrans %}</label>
+                            <input required name="last_name" id="last_name" type="text">
+                        </div>
+
+                    </div>
+                    <div class="input-group">
+                        <label class="full-label required" for="email">{% blocktrans %}E-mail{% endblocktrans %}</label>
+                        <input required name="email" id="email" type="email">
+                    </div>
+                    <label class="full-label required" for="message">{% blocktrans %}Your message here{% endblocktrans %}</label>
+                    <textarea required rows="5" name="message" id="message"
+                              type="text"></textarea><br>
+                    <div class="g-recaptcha " data-theme="dark" data-size="normal"
+                         data-sitekey="6LdeXfwUAAAAAKew_IPSQWs-Lqcnchi9hPjuVBd_"></div>
+                    <button class="mt-3 btn btn-contact " type="submit" style="padding: 0.5em 3em;">{% blocktrans %}Submit{% endblocktrans %}</button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMObn7vjTLit0g1pfuyBeh7IGFFr_ZoF32L-nCw3RybeIBLQ/viewform"
+                       class="mt-3 ml-3 btn btn-contact" style="padding: 0.5em 3em;">{% blocktrans %}Brief{% endblocktrans %}</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'includes/footer_links.html' %}
+{% include 'includes/poster_modal.html' %}
+<script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+</body>
+</html>

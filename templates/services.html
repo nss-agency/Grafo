@@ -1,0 +1,169 @@
+{% load static i18n %}
+{% get_static_prefix as static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% blocktrans %}Services{% endblocktrans %}| Grafo Studio</title>
+    <meta charset="utf-8">
+    <meta property="og:site_name" content="Grafo Studio"/>
+    <meta property="og:title" content="Services | Grafo Studio"/>
+    <meta property="og:description"
+          content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
+    <meta property="og:url" content="https://grafo.studio/services/">
+    <meta property="og:type" content="animation studio"/>
+    <meta property="og:image" content="{% static 'images/about/main_logo.png' %}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@NightSkyStudio"/>
+    <meta property="og:url" content="https://grafo.studio/services/"/>
+    <meta property="og:title" content="About Us | Grafo Studio"/>
+    <meta property="og:description"
+          content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
+    <meta property="og:image" content="{% static 'images/about/main_logo.png' %}"/>
+    <meta name="description"
+          content="Grafo is a studio specializing in 2D animation. Founded by a team of like-minded people, with unlimited imagination and desire to create original content. We can take care of your business starting with an great idea, and finishing with a completed project.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+          content="2d, 2d animation, 2d art, 2d advertisement, advertisement, animation studio, animation"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% include 'includes/head_links.html' %}
+</head>
+<body>
+{% include 'includes/nav.html' %}
+<div class="site-blocks-cover inner-page-cover overlay"
+     style="background-image: url('{{ static }}images/about/about_hero.png');" data-aos="fade"
+     data-stellar-background-ratio="0.5" data-aos="fade">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
+                <h2 class="text-white h1">{% blocktrans %}Our Services{% endblocktrans %}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-section pb-0">
+
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+                <h2 class="mb-5">{% blocktrans %}Illustration{% endblocktrans %}</h2>
+                <p>{% blocktrans %}Anything are memorable more easily when it backed up by beautiful
+                    illustrations{% endblocktrans %}</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-12 mb-5 mb-lg-5">
+                <div class="team-member-index">
+
+                    <img src="{{ static }}images/about/main_logo.png" alt="Image" class="img-fluid">
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 align-self-center">
+                <div class="team-member-index">
+
+                    <img src="{{ static }}images/promo_square.png" alt="Image" class="img-fluid">
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-8 mb-5 mb-lg-5 align-self-center text-left">
+                <ul class="services_list">
+                    <li>Charters Design</li>
+                    <li>Brand-Book Development</li>
+                    <li>Background design</li>
+                    <li>Posters creation</li>
+                    <li>Logotype design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-section  pb-0">
+
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+                <h2 class="mb-5">{% blocktrans %}Animation{% endblocktrans %}</h2>
+                <p>{% blocktrans %}Animation gives you a perfect opportunity to make you and your product distinct in
+                    the thick network of communication streams. Once your audience sees an animation in your specific
+                    style, they know it’s you and they can expect only for the best.{% endblocktrans %}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-12 mb-5 mb-lg-5">
+                <div class="team-member-index">
+
+                    <img src="{{ static }}images/index/grafo_logo-min.gif" alt="Image" class="img-fluid">
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-8 mb-5 mb-lg-5 align-self-center text-right">
+                <ul class="services_list">
+                    <li>Explainer video</li>
+                    <li>VJing</li>
+                    <li>Broadcast design</li>
+                    <li>Promo video</li>
+                    <li>Music videos</li>
+                    <li>Logotypes animation</li>
+                    <li>infographics</li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 align-self-center">
+                <div class="team-member-index">
+
+                    <img src="{{ static }}images/services_animation.gif" alt="Image" class="img-fluid">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="site-section  pb-0">
+
+    <div class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
+                <h2 class="mb-5">{% blocktrans %}Post Production{% endblocktrans %}</h2>
+                <p>{% blocktrans %}Gather all previous together, with pinch of FX and sound design to make your video
+                    visual harmonical and build the bridge between you and your target audience{% endblocktrans %}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-12 mb-5 mb-lg-5">
+                <div class="team-member-index">
+
+                    <img src="{{ static }}images/about/dragon.jpg" alt="Image" class="img-fluid">
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 align-self-center">
+                <div class="team-member-index">
+
+                    <img src="{{ static }}images/monatik.png" alt="Image" class="img-fluid">
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-8 mb-5 mb-lg-5 align-self-center text-left">
+                <ul class="services_list">
+                    <li>Sound Design</li>
+                    <li>Voice over</li>
+                    <li>Compositing</li>
+                    <li>infographics</li>
+                    <li>Broadcast design</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% include 'includes/footer.html' %}
+{% include 'includes/footer_links.html' %}
+{% include 'includes/poster_modal.html' %}
+</body>
+</html>

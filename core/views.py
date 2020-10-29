@@ -10,13 +10,13 @@ def send_contact(request):
     subject = 'Message from website'
     message = request.POST.get('message', '')
     from_email = request.POST.get('email', '')
-    messages = 'Name and Surname: {} {}\nFrom: {}\nMessage: \n{}\n\n\n\nSent From createanimation.co'.format(
+    messages = 'Name and Surname: {} {}\nFrom: {}\nMessage: \n{}\n\n\n\nSent From https://grafo.studio'.format(
         fname, lname, from_email, message)
     send_mail(subject, messages, 'noreply@grafo.studio', ['grafoanimation@gmail.com'], fail_silently=False)
-
+    send_mail(subject, messages, 'noreply@grafo.studio', ['ostapcha@grafo.studio'], fail_silently=False)
 
 def index(request):
-    projects = Project.objects.all().order_by('-id')[:5]
+    projects = Project.objects.all().order_by('-id')[:6]
     partners = Partner.objects.all()
 
     ctx = {
@@ -64,3 +64,10 @@ def work(request, slug):
     }
 
     return render(request, 'work.html', ctx)
+
+
+def services(request):
+    ctx = {
+        'partners': Partner.objects.all(),
+    }
+    return render(request, 'services.html', ctx)

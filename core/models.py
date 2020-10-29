@@ -3,12 +3,13 @@ from django.db.models.signals import post_delete
 from django.dispatch import receiver
 from autoslug import AutoSlugField
 from tinymce.models import HTMLField
+from django.utils.translation import ugettext_lazy as _
 
 
 class Project(models.Model):
-    CATEGORY_CHOICES = (('com', 'Commercial'),
-                        ('tv', 'TV'),
-                        ('cr', 'Creative'))
+    CATEGORY_CHOICES = (('com', _('Commercial')),
+                        ('tv', _('TV')),
+                        ('cr', _('Creative')))
 
     title = models.CharField('Назва проекту', max_length=60)
     slug = AutoSlugField(populate_from='title')
@@ -31,9 +32,7 @@ class Partner(models.Model):
                             max_length=125,
                             help_text='Назва')
     image = models.ImageField('Зображення',
-                              upload_to='images/partners',
-                              null=True,
-                              blank=True)
+                              upload_to='images/partners')
     link = models.URLField('Посилання',
                            null=True,
                            blank=True,
