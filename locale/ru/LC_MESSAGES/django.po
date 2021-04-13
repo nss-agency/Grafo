@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-13 08:22+0000\n"
-"PO-Revision-Date: 2021-04-13 08:33+0000\n"
+"POT-Creation-Date: 2021-04-13 08:47+0000\n"
+"PO-Revision-Date: 2021-04-13 08:51+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: No linguistic content\n"
 "Language: zxx\n"
@@ -16,12 +16,10 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/"
 
 #: core/models.py:11 templates/works.html:63 templates/works.html:86
-#| msgid "Explainer video"
 msgid "Explainers"
 msgstr "Объясняющее Видео"
 
 #: core/models.py:12 templates/works.html:66 templates/works.html:93
-#| msgid "Commercial"
 msgid "Commercials"
 msgstr "Рекламные ролики"
 
@@ -30,7 +28,6 @@ msgid "Music videos"
 msgstr "Видеоклипы"
 
 #: core/models.py:14
-#| msgid "Logotypes animation"
 msgid "Logo animation"
 msgstr "Анимация Логотипов"
 
@@ -72,7 +69,7 @@ msgstr ""
 "                     чтобы в конце гордо пожать друг другу руки и "
 "насладиться результатом."
 
-#: templates/about.html:154 templates/index.html:332
+#: templates/about.html:154 templates/index.html:335
 msgid "THEY CHOOSE US"
 msgstr "ОНИ ВЫБИРАЮТ НАС"
 
@@ -195,7 +192,7 @@ msgstr "Навигация"
 msgid "Home"
 msgstr "Главная"
 
-#: templates/includes/footer.html:23 templates/index.html:87
+#: templates/includes/footer.html:23 templates/index.html:90
 msgid "Our Works"
 msgstr "Наши Работы"
 
@@ -221,7 +218,7 @@ msgid "Services"
 msgstr "Сервисы"
 
 #: templates/includes/nav.html:28 templates/includes/navbar.html:29
-#: templates/index.html:143
+#: templates/index.html:146
 msgid "Get in touch"
 msgstr "Связаться"
 
@@ -249,23 +246,26 @@ msgstr ""
 
 #: templates/index.html:74
 msgid ""
-"Grafo is a studio specializing in 2D animation.\n"
-"                        Founded by a team of like-minded people, with "
-"unlimited imagination and desire to create\n"
-"                        original content. We can take care of your business "
-"starting with an great idea, and finishing\n"
-"                        with a completed project. We use our skills of "
-"storytelling, motion design, and frame by frame\n"
-"                        animation to produce a high-quality product."
+"Grafo is a team of experienced creators in 2D animation\n"
+"                        from Ukraine.\n"
+"                        Our mission is to create unique style and content "
+"driven by high-quality design and professional\n"
+"                        skills of motion design, frame-by-frame animation, "
+"storytelling passion, and more. To promote\n"
+"                        We are ready to bring to life your most ambitious "
+"ideas that can help you to become notable over\n"
+"                        the world.\n"
+"                        Be who you are, be original.\n"
+"                    "
 msgstr ""
-"Grafo - студия, специализирующаяся на 2D-анимации. Создана командой "
-"единомышленников, с неограниченным воображением и желанием создавать "
-"оригинальный контент. Мы можем позаботиться о вашем бизнесе, начиная с "
-"отличной идеи и заканчивая реализованным проектом. Мы используем свои навыки "
-"повествования, моушн-дизайна и покадровой анимации для создания "
-"высококачественного продукта."
+"Grafo - команда опытных создателей 2D-анимации из Украины. Наша миссия - "
+"создавать уникальный стиль и контент, основанный на высококачественном "
+"дизайне и профессиональных навыках моушн-дизайна, покадровой анимации, "
+"увлечении рассказыванием историй и многом другом. Мы готовы воплотить в "
+"жизнь самые амбициозные идеи, которые помогут вам стать известными во всем "
+"мире. Будь самим собой, будь оригинальным."
 
-#: templates/index.html:88
+#: templates/index.html:91
 msgid ""
 "We will approach your video using all our creativity. Making things original,"
 "\n"
@@ -275,7 +275,7 @@ msgstr ""
 "Мы подойдем к вашему видео, используя все свое творчество. Делаем вещи "
 "оригинальными, эффектными и интересными для просмотра."
 
-#: templates/index.html:114
+#: templates/index.html:117
 msgid ""
 "MORE\n"
 "                                &blacktriangleright;"
@@ -283,7 +283,7 @@ msgstr ""
 "БОЛЬШЕ\n"
 "                                 &blacktriangleright;"
 
-#: templates/index.html:129
+#: templates/index.html:132
 msgid ""
 "Have an idea for a video? <br>\n"
 "                            Just drop us a line and we'll create a full "
@@ -294,11 +294,11 @@ msgstr ""
 "                             Просто напишите нам, и мы создадим для вас "
 "коммерческое видео полного цикла."
 
-#: templates/index.html:154
+#: templates/index.html:157
 msgid "What we do"
 msgstr "Что мы делаем"
 
-#: templates/index.html:167
+#: templates/index.html:170
 msgid ""
 "\n"
 "                                                Illustration"
@@ -306,7 +306,7 @@ msgstr ""
 "\n"
 "                                Иллюстрация"
 
-#: templates/index.html:184
+#: templates/index.html:187
 msgid ""
 "\n"
 "                                                Animation"
@@ -314,17 +314,17 @@ msgstr ""
 "\n"
 "                                                Анимация"
 
-#: templates/index.html:200
+#: templates/index.html:203
 msgid ""
 "Post\n"
 "                                        Production"
 msgstr "Постпродакшн"
 
-#: templates/index.html:222
+#: templates/index.html:225
 msgid "Our Team"
 msgstr "Наша Команда"
 
-#: templates/index.html:223
+#: templates/index.html:226
 msgid ""
 "Storytellers, dream chasers, motion designers, animators, and\n"
 "                        artists"
@@ -332,11 +332,11 @@ msgstr ""
 "Рассказчики, охотники за мечтами, моушн-дизайнеры, аниматоры и\n"
 "                         художники"
 
-#: templates/index.html:234
+#: templates/index.html:237
 msgid "Tymko"
 msgstr "Тимко"
 
-#: templates/index.html:235
+#: templates/index.html:238
 msgid ""
 "Senior\n"
 "                                Animator"
@@ -344,11 +344,11 @@ msgstr ""
 "Старший\n"
 "                                 Аниматор"
 
-#: templates/index.html:247
+#: templates/index.html:250
 msgid "Ostap"
 msgstr "Остап"
 
-#: templates/index.html:248
+#: templates/index.html:251
 msgid ""
 "Creative\n"
 "                                Director"
@@ -356,11 +356,11 @@ msgstr ""
 "Творческий\n"
 "                                Директор"
 
-#: templates/index.html:260
+#: templates/index.html:263
 msgid "Nastia"
 msgstr "Настя"
 
-#: templates/index.html:261
+#: templates/index.html:264
 msgid ""
 "Motion\n"
 "                                Designer"
@@ -368,11 +368,11 @@ msgstr ""
 "Motion\n"
 "                                Дизайнер"
 
-#: templates/index.html:273
+#: templates/index.html:276
 msgid "Yakub"
 msgstr "Якуб"
 
-#: templates/index.html:274
+#: templates/index.html:277
 msgid ""
 "3D\n"
 "                                Animator"
@@ -380,11 +380,11 @@ msgstr ""
 "3D\n"
 "                                Аниматор"
 
-#: templates/index.html:285
+#: templates/index.html:288
 msgid "Dashka"
 msgstr "Дашка"
 
-#: templates/index.html:286
+#: templates/index.html:289
 msgid ""
 "\n"
 "                                Illustrator"
@@ -392,7 +392,7 @@ msgstr ""
 "\n"
 "                                Иллюстратор"
 
-#: templates/index.html:297
+#: templates/index.html:300
 msgid ""
 "\n"
 "                                Svyatik"
@@ -400,18 +400,18 @@ msgstr ""
 "\n"
 "                                Святик"
 
-#: templates/index.html:299
+#: templates/index.html:302
 msgid ""
 "Business\n"
 "                                Development\n"
 "                                Manager"
 msgstr "Менеджер по развитию бизнеса"
 
-#: templates/index.html:311
+#: templates/index.html:314
 msgid "Vicky"
 msgstr "Вики"
 
-#: templates/index.html:312
+#: templates/index.html:315
 msgid ""
 "Junior Motion\n"
 "                                Designer"
@@ -419,7 +419,7 @@ msgstr ""
 "Junior Motion\n"
 "                                Designer"
 
-#: templates/index.html:323
+#: templates/index.html:326
 msgid ""
 "about\n"
 "                                us"
@@ -446,9 +446,6 @@ msgid "Illustration"
 msgstr "Иллюстрация"
 
 #: templates/services.html:61
-#| msgid ""
-#| "Anything are memorable more easily when it backed up by beautiful\n"
-#| "                    illustrations"
 msgid ""
 "Any information is perceived better when it's packed with cool\n"
 "                    illustrations."
@@ -465,12 +462,10 @@ msgid "Charters Design"
 msgstr "Дизайн персонажев"
 
 #: templates/services.html:86
-#| msgid "Background design"
 msgid "Background Design"
 msgstr "Дизайн Фона"
 
 #: templates/services.html:87
-#| msgid "Logotype design"
 msgid "Logo Design"
 msgstr "Дизайн Логотипа"
 
@@ -479,13 +474,6 @@ msgid "Animation"
 msgstr "Анимация"
 
 #: templates/services.html:99
-#| msgid ""
-#| "Animation gives you a perfect opportunity to make you and your product "
-#| "distinct in\n"
-#| "                    the thick network of communication streams. Once your "
-#| "audience sees an animation in your specific\n"
-#| "                    style, they know it’s you and they can expect only for "
-#| "the best."
 msgid ""
 "Animation gives you a perfect opportunity to make your product distinct in "
 "the thick\n"
@@ -495,32 +483,26 @@ msgstr ""
 "коммуникационных потоков."
 
 #: templates/services.html:113
-#| msgid "Explainer video"
 msgid "Explainer Videos"
 msgstr "Объясняющее Видео"
 
 #: templates/services.html:114
-#| msgid "commercial"
 msgid "Animated commercials"
 msgstr "Animated commercials"
 
 #: templates/services.html:115
-#| msgid "Promo video"
 msgid "Promo Video"
 msgstr "Promo Video"
 
 #: templates/services.html:116 templates/works.html:69 templates/works.html:101
-#| msgid "Music videos"
 msgid "Music Videos"
 msgstr "Видеоклипы"
 
 #: templates/services.html:117 templates/works.html:72 templates/works.html:109
-#| msgid "Logotypes animation"
 msgid "Logo Animation"
 msgstr "Анимация Логотипов"
 
 #: templates/services.html:118
-#| msgid "infographics"
 msgid "Infographics"
 msgstr "Инфографика"
 
@@ -541,7 +523,6 @@ msgid "Sound Design"
 msgstr "Звуковой дизайн"
 
 #: templates/services.html:161
-#| msgid "Voice over"
 msgid "Voice Over"
 msgstr "Голос за кадром"
 
@@ -550,7 +531,6 @@ msgid "Compositing"
 msgstr "Композитинг"
 
 #: templates/works.html:10
-#| msgid "Animation studio portfolio | Creative studio 2D animation Grafo Studio"
 msgid ""
 "Animation studio portfolio | Creative studio 2D animation Grafo\n"
 "        Studio"
