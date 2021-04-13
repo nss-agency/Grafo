@@ -1,0 +1,581 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-13 08:22+0000\n"
+"PO-Revision-Date: 2021-04-13 08:33+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: No linguistic content\n"
+"Language: zxx\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Loco-Source-Locale: uk_UA\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: core/models.py:11 templates/works.html:63 templates/works.html:86
+#| msgid "Explainer video"
+msgid "Explainers"
+msgstr "Объясняющее Видео"
+
+#: core/models.py:12 templates/works.html:66 templates/works.html:93
+#| msgid "Commercial"
+msgid "Commercials"
+msgstr "Рекламные ролики"
+
+#: core/models.py:13
+msgid "Music videos"
+msgstr "Видеоклипы"
+
+#: core/models.py:14
+#| msgid "Logotypes animation"
+msgid "Logo animation"
+msgstr "Анимация Логотипов"
+
+#: core/models.py:15
+msgid "Creative"
+msgstr "Творческий"
+
+#: templates/404.html:10 templates/500.html:10 templates/505.html:10
+msgid "404"
+msgstr "404"
+
+#: templates/404.html:43 templates/500.html:43 templates/505.html:43
+msgid "back to home page"
+msgstr "вернуться на главную страницу"
+
+#: templates/about.html:10
+msgid "About Us"
+msgstr "О нас"
+
+#: templates/about.html:59
+msgid ""
+"We have gathered the best specialists with many years of\n"
+"                    experience, life inspiration, and a fresh look in order "
+"to create the most effective animated video\n"
+"                    that will perform the marketing goal in the best way. "
+"Our team is our main pride!\n"
+"                    Working on the project with the client, we 'sail in the "
+"same boat' to work out the smallest details,\n"
+"                    so that in the end proudly shake hands with each other "
+"and enjoy the result.\n"
+"                "
+msgstr ""
+"Мы собрали лучших специалистов с многолетним опытом, жизненным вдохновением "
+"и свежим взглядом, чтобы создать максимально эффективный анимационный ролик, "
+"который наилучшим образом выполнит поставленную маркетинговую задачу. Наша "
+"команда - наша главная гордость!\n"
+"                     Работая над проектом с клиентом, мы «плывем в одной "
+"лодке», прорабатываем мельчайшие детали,\n"
+"                     чтобы в конце гордо пожать друг другу руки и "
+"насладиться результатом."
+
+#: templates/about.html:154 templates/index.html:332
+msgid "THEY CHOOSE US"
+msgstr "ОНИ ВЫБИРАЮТ НАС"
+
+#: templates/contact.html:10
+msgid "Contacts of creative studio 2D-animation Grafo Studio"
+msgstr "Контакты креативной студии 2D-анимации Grafo Studio"
+
+#: templates/contact.html:30
+msgid ""
+"Contacts of the creative studio Grafo Studio Lviv. Ukraine; Kiev, Boris "
+"Hmyri st., 5 ☎️ (068) 10 40 040 ⏩ Email: contact@grafo.studio"
+msgstr ""
+"Контакты креативной студии Grafo Studio Львов. Украина; Киев, ул Бориса "
+"Гмыри, 5 ☎️ (068) 10 40 040 ⏩ Email: contact@grafo.studio"
+
+#: templates/contact.html:51
+msgid ""
+"\n"
+"                    Company\n"
+"                    details"
+msgstr ""
+"\n"
+"                    Сведения\n"
+"                    о компании"
+
+#: templates/contact.html:56
+msgid "Number(Telegram)"
+msgstr "Номер (Telegram)"
+
+#: templates/contact.html:59
+msgid "Location"
+msgstr "Расположение"
+
+#: templates/contact.html:59
+msgid ""
+"Lviv.\n"
+"                        Ukraine"
+msgstr ""
+"Львов.\n"
+"                         Украина"
+
+#: templates/contact.html:62
+msgid ""
+"Kyiv.\n"
+"                        Ukraine, Borysa Hmyri St, 5"
+msgstr ""
+"Киев.\n"
+"                         Украина, ул. Бориса Гмыри, 5"
+
+#: templates/contact.html:85
+msgid ""
+"Thank you for writing us. We will contact you as soon as\n"
+"                        possible"
+msgstr "Спасибо, что написали нам. Мы свяжемся с вами как можно скорее"
+
+#: templates/contact.html:89
+msgid ""
+"Invalid reCAPTCHA. Please try\n"
+"                        again."
+msgstr ""
+"Неверный reCAPTCHA. Пожалуйста, попробуй\n"
+"                         ещё раз."
+
+#: templates/contact.html:92
+msgid ""
+"\n"
+"                    YES, we'd like to\n"
+"                    direct a commercial for you."
+msgstr ""
+"\n"
+"                    ДА, мы хотим снять\n"
+"                    для вас рекламный ролик."
+
+#: templates/contact.html:97
+msgid "Feel free to drop us a line anytime."
+msgstr "Не стесняйтесь писать нам в любое время."
+
+#: templates/contact.html:103
+msgid "First Name"
+msgstr "Имя"
+
+#: templates/contact.html:107
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: templates/contact.html:113
+msgid "E-mail"
+msgstr "E-mail"
+
+#: templates/contact.html:116
+msgid "Your message here"
+msgstr "Ваше сообщение"
+
+#: templates/contact.html:121
+msgid "Submit"
+msgstr "Подтвердить"
+
+#: templates/contact.html:123
+msgid "Brief"
+msgstr "Бриф"
+
+#: templates/includes/footer.html:7
+msgid "About Grafo"
+msgstr "О Grafo"
+
+#: templates/includes/footer.html:8
+msgid ""
+"Grafo studio is based in the beautiful city of Lviv, where historical "
+"buildings hide a buzzing\n"
+"                        party, food and art scene."
+msgstr ""
+"Студия Grafo находится в прекрасном городе Львове, где исторические здания "
+"скрывают шумную вечеринку, еду и арт-сцену."
+
+#: templates/includes/footer.html:18
+msgid "Navigations"
+msgstr "Навигация"
+
+#: templates/includes/footer.html:22
+msgid "Home"
+msgstr "Главная"
+
+#: templates/includes/footer.html:23 templates/index.html:87
+msgid "Our Works"
+msgstr "Наши Работы"
+
+#: templates/includes/footer.html:24 templates/includes/nav.html:25
+#: templates/includes/navbar.html:26
+msgid "About"
+msgstr "О нас"
+
+#: templates/includes/footer.html:25
+msgid "Contact"
+msgstr "Контакты"
+
+#: templates/includes/footer.html:32
+msgid "Follow Us"
+msgstr "Подписывайтесь на нас"
+
+#: templates/includes/nav.html:26 templates/includes/navbar.html:27
+msgid "Works"
+msgstr "Работы"
+
+#: templates/includes/nav.html:27 templates/includes/navbar.html:28
+msgid "Services"
+msgstr "Сервисы"
+
+#: templates/includes/nav.html:28 templates/includes/navbar.html:29
+#: templates/index.html:143
+msgid "Get in touch"
+msgstr "Связаться"
+
+#: templates/includes/nav.html:31 templates/includes/navbar.html:32
+msgid "Language"
+msgstr "Язык"
+
+#: templates/index.html:11
+msgid ""
+"Grafo Studio - creative 2D animation studio, professional 2D\n"
+"        animation"
+msgstr ""
+"Grafo Studio - креативная студия 2D-анимации, профессиональная двумерная "
+"анимация"
+
+#: templates/index.html:32
+msgid ""
+"2D animation ⚡ Order the production of 2D videos and films in Lviv, Ukraine "
+"☎️ (068) 10 40 040 ⏩ Professional two-dimensional animation to order ⚡ 2D "
+"videos from the creative studio Grafo Studio"
+msgstr ""
+"2D анимация ⚡ Заказать производство 2D видеороликов и фильмов во Львове, "
+"Украине ☎️ (068) 10 40 040 ⏩ Профессиональная двумерная анимация на заказ ⚡ "
+"2D ролики от креативной студии Grafo Studio"
+
+#: templates/index.html:74
+msgid ""
+"Grafo is a studio specializing in 2D animation.\n"
+"                        Founded by a team of like-minded people, with "
+"unlimited imagination and desire to create\n"
+"                        original content. We can take care of your business "
+"starting with an great idea, and finishing\n"
+"                        with a completed project. We use our skills of "
+"storytelling, motion design, and frame by frame\n"
+"                        animation to produce a high-quality product."
+msgstr ""
+"Grafo - студия, специализирующаяся на 2D-анимации. Создана командой "
+"единомышленников, с неограниченным воображением и желанием создавать "
+"оригинальный контент. Мы можем позаботиться о вашем бизнесе, начиная с "
+"отличной идеи и заканчивая реализованным проектом. Мы используем свои навыки "
+"повествования, моушн-дизайна и покадровой анимации для создания "
+"высококачественного продукта."
+
+#: templates/index.html:88
+msgid ""
+"We will approach your video using all our creativity. Making things original,"
+"\n"
+"                        effective, and\n"
+"                        interesting to watch."
+msgstr ""
+"Мы подойдем к вашему видео, используя все свое творчество. Делаем вещи "
+"оригинальными, эффектными и интересными для просмотра."
+
+#: templates/index.html:114
+msgid ""
+"MORE\n"
+"                                &blacktriangleright;"
+msgstr ""
+"БОЛЬШЕ\n"
+"                                 &blacktriangleright;"
+
+#: templates/index.html:129
+msgid ""
+"Have an idea for a video? <br>\n"
+"                            Just drop us a line and we'll create a full "
+"cycle commercial video for\n"
+"                            you"
+msgstr ""
+"Есть идея для видео? <br>\n"
+"                             Просто напишите нам, и мы создадим для вас "
+"коммерческое видео полного цикла."
+
+#: templates/index.html:154
+msgid "What we do"
+msgstr "Что мы делаем"
+
+#: templates/index.html:167
+msgid ""
+"\n"
+"                                                Illustration"
+msgstr ""
+"\n"
+"                                Иллюстрация"
+
+#: templates/index.html:184
+msgid ""
+"\n"
+"                                                Animation"
+msgstr ""
+"\n"
+"                                                Анимация"
+
+#: templates/index.html:200
+msgid ""
+"Post\n"
+"                                        Production"
+msgstr "Постпродакшн"
+
+#: templates/index.html:222
+msgid "Our Team"
+msgstr "Наша Команда"
+
+#: templates/index.html:223
+msgid ""
+"Storytellers, dream chasers, motion designers, animators, and\n"
+"                        artists"
+msgstr ""
+"Рассказчики, охотники за мечтами, моушн-дизайнеры, аниматоры и\n"
+"                         художники"
+
+#: templates/index.html:234
+msgid "Tymko"
+msgstr "Тимко"
+
+#: templates/index.html:235
+msgid ""
+"Senior\n"
+"                                Animator"
+msgstr ""
+"Старший\n"
+"                                 Аниматор"
+
+#: templates/index.html:247
+msgid "Ostap"
+msgstr "Остап"
+
+#: templates/index.html:248
+msgid ""
+"Creative\n"
+"                                Director"
+msgstr ""
+"Творческий\n"
+"                                Директор"
+
+#: templates/index.html:260
+msgid "Nastia"
+msgstr "Настя"
+
+#: templates/index.html:261
+msgid ""
+"Motion\n"
+"                                Designer"
+msgstr ""
+"Motion\n"
+"                                Дизайнер"
+
+#: templates/index.html:273
+msgid "Yakub"
+msgstr "Якуб"
+
+#: templates/index.html:274
+msgid ""
+"3D\n"
+"                                Animator"
+msgstr ""
+"3D\n"
+"                                Аниматор"
+
+#: templates/index.html:285
+msgid "Dashka"
+msgstr "Дашка"
+
+#: templates/index.html:286
+msgid ""
+"\n"
+"                                Illustrator"
+msgstr ""
+"\n"
+"                                Иллюстратор"
+
+#: templates/index.html:297
+msgid ""
+"\n"
+"                                Svyatik"
+msgstr ""
+"\n"
+"                                Святик"
+
+#: templates/index.html:299
+msgid ""
+"Business\n"
+"                                Development\n"
+"                                Manager"
+msgstr "Менеджер по развитию бизнеса"
+
+#: templates/index.html:311
+msgid "Vicky"
+msgstr "Вики"
+
+#: templates/index.html:312
+msgid ""
+"Junior Motion\n"
+"                                Designer"
+msgstr ""
+"Junior Motion\n"
+"                                Designer"
+
+#: templates/index.html:323
+msgid ""
+"about\n"
+"                                us"
+msgstr ""
+"О\n"
+"                                нас"
+
+#: templates/services.html:12
+msgid "Our Services | Creative studio 2D animation Grafo Studio"
+msgstr "Наши услуги | Креативная студия 2D анимации Grafo Studio"
+
+#: templates/services.html:32
+msgid ""
+"Services of a creative studio 2D animation ⏩ Creation of advertising videos, "
+"video infographics, motion design ⚡ To order, call ☎️ (068) 10 40 040 | "
+"Grafo Studio"
+msgstr ""
+"Услуги креативной студии 2D анимации ⏩ Создание рекламных видеороликов, "
+"видеоинфографика, моушн дизайн ⚡ Для заказа звони ☎️ (068) 10 40 040 | Grafo "
+"Studio"
+
+#: templates/services.html:60
+msgid "Illustration"
+msgstr "Иллюстрация"
+
+#: templates/services.html:61
+#| msgid ""
+#| "Anything are memorable more easily when it backed up by beautiful\n"
+#| "                    illustrations"
+msgid ""
+"Any information is perceived better when it's packed with cool\n"
+"                    illustrations."
+msgstr ""
+"Любая информация воспринимается лучше, когда она набита классными "
+"иллюстрациями."
+
+#: templates/services.html:84
+msgid "Storyboards"
+msgstr "Раскадровки"
+
+#: templates/services.html:85
+msgid "Charters Design"
+msgstr "Дизайн персонажев"
+
+#: templates/services.html:86
+#| msgid "Background design"
+msgid "Background Design"
+msgstr "Дизайн Фона"
+
+#: templates/services.html:87
+#| msgid "Logotype design"
+msgid "Logo Design"
+msgstr "Дизайн Логотипа"
+
+#: templates/services.html:98
+msgid "Animation"
+msgstr "Анимация"
+
+#: templates/services.html:99
+#| msgid ""
+#| "Animation gives you a perfect opportunity to make you and your product "
+#| "distinct in\n"
+#| "                    the thick network of communication streams. Once your "
+#| "audience sees an animation in your specific\n"
+#| "                    style, they know it’s you and they can expect only for "
+#| "the best."
+msgid ""
+"Animation gives you a perfect opportunity to make your product distinct in "
+"the thick\n"
+"                    network of communication streams."
+msgstr ""
+"Анимация дает вам прекрасную возможность выделить свой продукт в густой сети "
+"коммуникационных потоков."
+
+#: templates/services.html:113
+#| msgid "Explainer video"
+msgid "Explainer Videos"
+msgstr "Объясняющее Видео"
+
+#: templates/services.html:114
+#| msgid "commercial"
+msgid "Animated commercials"
+msgstr "Animated commercials"
+
+#: templates/services.html:115
+#| msgid "Promo video"
+msgid "Promo Video"
+msgstr "Promo Video"
+
+#: templates/services.html:116 templates/works.html:69 templates/works.html:101
+#| msgid "Music videos"
+msgid "Music Videos"
+msgstr "Видеоклипы"
+
+#: templates/services.html:117 templates/works.html:72 templates/works.html:109
+#| msgid "Logotypes animation"
+msgid "Logo Animation"
+msgstr "Анимация Логотипов"
+
+#: templates/services.html:118
+#| msgid "infographics"
+msgid "Infographics"
+msgstr "Инфографика"
+
+#: templates/services.html:138
+msgid "Post Production"
+msgstr "Постпродакшн"
+
+#: templates/services.html:139
+msgid ""
+"We stay connected with you to provide the in-time release of your\n"
+"                    video."
+msgstr ""
+"Мы остаемся на связи с вами, чтобы обеспечить своевременный выпуск вашего "
+"видео."
+
+#: templates/services.html:160
+msgid "Sound Design"
+msgstr "Звуковой дизайн"
+
+#: templates/services.html:161
+#| msgid "Voice over"
+msgid "Voice Over"
+msgstr "Голос за кадром"
+
+#: templates/services.html:162
+msgid "Compositing"
+msgstr "Композитинг"
+
+#: templates/works.html:10
+#| msgid "Animation studio portfolio | Creative studio 2D animation Grafo Studio"
+msgid ""
+"Animation studio portfolio | Creative studio 2D animation Grafo\n"
+"        Studio"
+msgstr ""
+"Портфолио студии анимации | Креативная студия 2D анимации Grafo \n"
+"        Studio"
+
+#: templates/works.html:31
+msgid ""
+"Portfolio of completed works from Grafo Studio ⏩ Creation of advertising "
+"videos, video infographics, motion design Do you want an animated video? "
+"Call ☎️ (068) 10 40 040"
+msgstr ""
+"Портфолио выполненных работ от Grafo Studio ⏩ Создание рекламных "
+"видеороликов, видеоинфографика, моушн дизайн Хочешь себе анимированное видео?"
+" Звони ☎️ (068) 10 40 040"
+
+#: templates/works.html:60
+msgid "ALL"
+msgstr "Все"
+
+#: templates/works.html:75
+msgid "CREATIVE"
+msgstr "ТВОРЧЕСКИЙ"
+
+#: templates/works.html:117
+msgid "creative"
+msgstr "творческий"

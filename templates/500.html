@@ -1,0 +1,49 @@
+{% load static i18n %}
+{% get_static_prefix as static %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_language_info for LANGUAGE_CODE as current_language %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+<!DOCTYPE html>
+<html lang="{{ current_language.code }}">
+<head>
+    <title>{% blocktrans %}404{% endblocktrans %} | Grafo Studio</title>
+    <meta charset="utf-8">
+    <meta property="og:site_name" content="Grafo Studio"/>
+    <meta property="og:title" content="About Us | Grafo Studio"/>
+    <meta property="og:description"
+          content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
+    <meta property="og:url" content="https://grafo.studio/about/">
+    <meta property="og:type" content="animation studio"/>
+    <meta property="og:image" content="{% static 'images/about/main_logo.png' %}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:width" content="1200">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@NightSkyStudio"/>
+    <meta property="og:url" content="https://grafo.studio/about/"/>
+    <meta property="og:title" content="About Us | Grafo Studio"/>
+    <meta property="og:description"
+          content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
+    <meta property="og:image" content="{% static 'images/about/main_logo.png' %}"/>
+    <meta name="description"
+          content="Grafo is a studio specializing in 2D animation. Founded by a team of like-minded people, with unlimited imagination and desire to create original content. We can take care of your business starting with an great idea, and finishing with a completed project.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+          content="2d, 2d animation, 2d art, 2d advertisement, advertisement, animation studio, animation"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% include 'includes/head_links.html' %}
+</head>
+<body>
+{% include 'includes/nav.html' %}
+<section class="section-error">
+    <img class="video-contact" src="{{ static }}images/frame_33.png" alt="" style="opacity: 0.3;">
+    <div class="error-text">
+        <h1>404</h1>
+        <a href="{% url 'index' %}">{% trans 'back to home page'%}</a>
+    </div>
+</section>
+{% include 'includes/footer_links.html' %}
+{% include 'includes/poster_modal.html' %}
+</body>
+</html>

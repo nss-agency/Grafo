@@ -1,7 +1,11 @@
 {% load static i18n %}
 {% get_static_prefix as static %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_language_info for LANGUAGE_CODE as current_language %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ current_language.code }}">
 <head>
     <title>{% blocktrans %}About Us{% endblocktrans %}| Grafo Studio</title>
     <meta charset="utf-8">
@@ -28,17 +32,21 @@
     <meta name="keywords"
           content="2d, 2d animation, 2d art, 2d advertisement, advertisement, animation studio, animation"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="https://grafo.studio/{{ current_language.code }}/about/"/>
+    <link rel="alternate" hreflang="uk" href="https://grafo.studio/uk/about/"/>
+    <link rel="alternate" hreflang="ru" href="https://grafo.studio/ru/about/"/>
+    <link rel="alternate" hreflang="en" href="https://grafo.studio/en/about/"/>
     {% include 'includes/head_links.html' %}
 </head>
 <body>
 {% include 'includes/nav.html' %}
-<div class="site-blocks-cover inner-page-cover overlay"
-     style="background-image: url('{{ static }}images/about/about_hero.png');" data-aos="fade"
+<div class="site-blocks-cover inner-page-cover"
+     style="background-image: url('{{ static }}images/index/about-animation.gif');background-position: left;"
+     data-aos="fade"
      data-stellar-background-ratio="0.5" data-aos="fade">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-                <h2 class="text-white h1">{% blocktrans %}About Us{% endblocktrans %}</h2>
             </div>
         </div>
     </div>
@@ -48,11 +56,12 @@
 
         <div class="row">
             <div class="site-section-heading text-justify w-border mx-3 mx-lg-auto mt-5 mt-lg-0" data-aos="fade-up">
-                <p class="main-block-font">{% blocktrans %}We spend everything through our 2d prism and turn reality
-                    into 2D animation where no restrictions for your imagination where you can create all you want. Our
-                    team includes directors, artists, and animators working like a well-oiled machine. Our priority is
-                    always the quality of the work. We turn our passion into original stuff, like advertising, explainer
-                    videos, TV series, music videos, and our own creative projects. We animate the world.{% endblocktrans %}</p>
+                <p class="main-block-font">{% blocktrans %}We have gathered the best specialists with many years of
+                    experience, life inspiration, and a fresh look in order to create the most effective animated video
+                    that will perform the marketing goal in the best way. Our team is our main pride!
+                    Working on the project with the client, we 'sail in the same boat' to work out the smallest details,
+                    so that in the end proudly shake hands with each other and enjoy the result.
+                {% endblocktrans %}</p>
             </div>
         </div>
     </div>
@@ -61,18 +70,10 @@
 
     <div class="container" data-aos="fade-up">
         <div class="row">
-            <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
-                <h2 class="mb-5">{% blocktrans %}Our Team{% endblocktrans %}</h2>
-                <p>{% blocktrans %}Combination of a correctly directed team and right using creativity is a recipe for
-                    the success
-                    of any project{% endblocktrans %}</p>
-            </div>
-        </div>
-        <div class="row">
             <div class="col-md-6 col-lg-12 mb-5 mb-lg-5">
                 <div class="team-member-index">
 
-                    <img src="{{ static }}images/about/main_logo.png" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/index/grafo_logo-min.gif" alt="Image" class="img-fluid">
 
                 </div>
             </div>
@@ -80,7 +81,7 @@
             <div class="col-md-6 col-lg-8 mb-5 mb-lg-5">
                 <div class="team-member-index">
 
-                    <img src="{{ static }}images/about/dragon.jpg" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/index/bw_bus.gif" alt="Image" class="img-fluid">
 
                 </div>
             </div>
@@ -154,7 +155,7 @@
         <div class="partners-grid">
             {% for item in partners %}
                 <div class="partners-grid-wraper">
-                    <a href="{{ item.link }}">
+                    <a href="{{ item.link }}" rel="nofollow">
                         <img class="partners-grid-item" src="{{ item.image.url }}" alt="">
                     </a>
                 </div>
@@ -167,6 +168,5 @@
 
 {% include 'includes/footer.html' %}
 {% include 'includes/footer_links.html' %}
-{% include 'includes/poster_modal.html' %}
 </body>
 </html>

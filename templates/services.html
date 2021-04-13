@@ -1,9 +1,15 @@
 {% load static i18n %}
 {% get_static_prefix as static %}
+{% load static i18n %}
+{% get_static_prefix as static %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_language_info for LANGUAGE_CODE as current_language %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ current_language.code }}">
 <head>
-    <title>{% blocktrans %}Services{% endblocktrans %}| Grafo Studio</title>
+    <title>{% blocktrans %}Our Services | Creative studio 2D animation Grafo Studio{% endblocktrans %}</title>
     <meta charset="utf-8">
     <meta property="og:site_name" content="Grafo Studio"/>
     <meta property="og:title" content="Services | Grafo Studio"/>
@@ -23,22 +29,25 @@
           content="We believe that when life gives you lemons - make lemonade. So we gathered all the ripest lemons together to create the best team ever and to share the sweetest lemonade we are making all around the world."/>
     <meta property="og:image" content="{% static 'images/about/main_logo.png' %}"/>
     <meta name="description"
-          content="Grafo is a studio specializing in 2D animation. Founded by a team of like-minded people, with unlimited imagination and desire to create original content. We can take care of your business starting with an great idea, and finishing with a completed project.">
+          content="{% blocktrans %}Services of a creative studio 2D animation ⏩ Creation of advertising videos, video infographics, motion design ⚡ To order, call ☎️ (068) 10 40 040 | Grafo Studio{% endblocktrans %}">
     <meta name="robots" content="index, follow">
     <meta name="keywords"
           content="2d, 2d animation, 2d art, 2d advertisement, advertisement, animation studio, animation"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="https://grafo.studio/{{ current_language.code }}/services/"/>
+    <link rel="alternate" hreflang="uk" href="https://grafo.studio/uk/services/"/>
+    <link rel="alternate" hreflang="ru" href="https://grafo.studio/ru/services/"/>
+    <link rel="alternate" hreflang="en" href="https://grafo.studio/en/services/"/>
     {% include 'includes/head_links.html' %}
 </head>
 <body>
 {% include 'includes/nav.html' %}
-<div class="site-blocks-cover inner-page-cover overlay"
-     style="background-image: url('{{ static }}images/about/about_hero.png');" data-aos="fade"
+<div class="site-blocks-cover inner-page-cover "
+     style="background-image: url('{{ static }}images/index/character_grafo.gif');" data-aos="fade"
      data-stellar-background-ratio="0.5" data-aos="fade">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center" data-aos="fade-up" data-aos-delay="400">
-                <h2 class="text-white h1">{% blocktrans %}Our Services{% endblocktrans %}</h2>
             </div>
         </div>
     </div>
@@ -49,8 +58,8 @@
         <div class="row">
             <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
                 <h2 class="mb-5">{% blocktrans %}Illustration{% endblocktrans %}</h2>
-                <p>{% blocktrans %}Anything are memorable more easily when it backed up by beautiful
-                    illustrations{% endblocktrans %}</p>
+                <p>{% blocktrans %}Any information is perceived better when it's packed with cool
+                    illustrations.{% endblocktrans %}</p>
             </div>
 
         </div>
@@ -58,25 +67,24 @@
             <div class="col-md-6 col-lg-12 mb-5 mb-lg-5">
                 <div class="team-member-index">
 
-                    <img src="{{ static }}images/about/main_logo.png" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/services/illustration.jpeg" alt="Image" class="img-fluid">
 
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 align-self-center">
                 <div class="team-member-index">
 
-                    <img src="{{ static }}images/promo_square.png" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/index/illustration.gif" alt="Image" class="img-fluid">
 
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-8 mb-5 mb-lg-5 align-self-center text-left">
                 <ul class="services_list">
+                    <li>{% blocktrans %}Storyboards{% endblocktrans %}</li>
                     <li>{% blocktrans %}Charters Design{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Brand-Book Development{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Background design{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Posters creation{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Logotype design{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Background Design{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Logo Design{% endblocktrans %}</li>
                 </ul>
             </div>
         </div>
@@ -88,34 +96,32 @@
         <div class="row">
             <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
                 <h2 class="mb-5">{% blocktrans %}Animation{% endblocktrans %}</h2>
-                <p>{% blocktrans %}Animation gives you a perfect opportunity to make you and your product distinct in
-                    the thick network of communication streams. Once your audience sees an animation in your specific
-                    style, they know it’s you and they can expect only for the best.{% endblocktrans %}</p>
+                <p>{% blocktrans %}Animation gives you a perfect opportunity to make your product distinct in the thick
+                    network of communication streams.{% endblocktrans %}</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-12 mb-5 mb-lg-5">
                 <div class="team-member-index">
 
-                    <img src="{{ static }}images/index/grafo_logo-min.gif" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/services/animation.jpeg" alt="Image" class="img-fluid">
 
                 </div>
             </div>
             <div class="col-md-6 col-lg-8 mb-5 mb-lg-5 align-self-center text-right">
                 <ul class="services_list">
-                    <li>{% blocktrans %}Explainer video{% endblocktrans %}</li>
-                    <li>{% blocktrans %}VJing{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Broadcast design{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Promo video{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Music videos{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Logotypes animation{% endblocktrans %}</li>
-                    <li>{% blocktrans %}infographics{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Explainer Videos{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Animated commercials{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Promo Video{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Music Videos{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Logo Animation{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Infographics{% endblocktrans %}</li>
                 </ul>
             </div>
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 align-self-center">
                 <div class="team-member-index">
 
-                    <img src="{{ static }}images/services_animation.gif" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/index/animation.gif" alt="Image" class="img-fluid">
 
                 </div>
             </div>
@@ -130,32 +136,31 @@
         <div class="row">
             <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
                 <h2 class="mb-5">{% blocktrans %}Post Production{% endblocktrans %}</h2>
-                <p>{% blocktrans %}Gather all previous together, with pinch of FX and sound design to make your video
-                    visual harmonical and build the bridge between you and your target audience{% endblocktrans %}</p>
+                <p>{% blocktrans %}We stay connected with you to provide the in-time release of your
+                    video.{% endblocktrans %}</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-12 mb-5 mb-lg-5">
                 <div class="team-member-index">
 
-                    <img src="{{ static }}images/about/dragon.jpg" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/services/post-prod.jpeg" alt="Image" class="img-fluid">
 
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-5 mb-lg-5 align-self-center">
                 <div class="team-member-index">
 
-                    <img src="{{ static }}images/monatik.png" alt="Image" class="img-fluid">
+                    <img src="{{ static }}images/index/post-prod.gif" alt="Image" class="img-fluid">
 
                 </div>
             </div>
             <div class="col-md-6 col-lg-8 mb-5 mb-lg-5 align-self-center text-left">
                 <ul class="services_list">
                     <li>{% blocktrans %}Sound Design{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Voice over{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Voice Over{% endblocktrans %}</li>
                     <li>{% blocktrans %}Compositing{% endblocktrans %}</li>
-                    <li>{% blocktrans %}infographics{% endblocktrans %}</li>
-                    <li>{% blocktrans %}Broadcast design{% endblocktrans %}</li>
+
                 </ul>
             </div>
 
@@ -164,6 +169,5 @@
 </div>
 {% include 'includes/footer.html' %}
 {% include 'includes/footer_links.html' %}
-{% include 'includes/poster_modal.html' %}
 </body>
 </html>

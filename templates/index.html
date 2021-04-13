@@ -1,10 +1,15 @@
 {% load static %}
 {% get_static_prefix as static %}
 {% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_language_info for LANGUAGE_CODE as current_language %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ current_language.code }}">
 <head>
-    <title>Grafo Studio | 2D Animation</title>
+    <title>{% blocktrans %}Grafo Studio - creative 2D animation studio, professional 2D
+        animation{% endblocktrans %}</title>
     <meta charset="utf-8">
     <meta property="og:site_name" content="Grafo Studio"/>
     <meta property="og:title" content="Grafo Studio"/>
@@ -24,15 +29,17 @@
           content="Grafo is a studio specializing in 2D animation. Founded by a team of like-minded people, with unlimited imagination and desire to create original content. We can take care of your business starting with an great idea, and finishing with a completed project. We use our skills of storytelling, motion design, and frame by frame animation to produce a high-quality product."/>
     <meta property="og:image" content="{% static 'images/about/main_logo.png' %}"/>
     <meta name="description"
-          content="Grafo is a studio specializing in 2D animation. Founded by a team of like-minded people, with unlimited imagination and desire to create original content. We can take care of your business starting with an great idea, and finishing with a completed project.">
+          content="{% blocktrans %}2D animation ⚡ Order the production of 2D videos and films in Lviv, Ukraine ☎️ (068) 10 40 040 ⏩ Professional two-dimensional animation to order ⚡ 2D videos from the creative studio Grafo Studio{% endblocktrans %}">
     <meta name="robots" content="index, follow">
     <meta name="keywords"
           content="2d, 2d animation, 2d art, 2d advertisement, advertisement, animation studio, animation"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% include 'includes/head_links.html' %}
-    <style>
+    <link rel="canonical" href="https://grafo.studio/{{ current_language.code }}/"/>
+    <link rel="alternate" hreflang="uk" href="https://grafo.studio/uk"/>
+    <link rel="alternate" hreflang="ru" href="https://grafo.studio/ru/"/>
+    <link rel="alternate" hreflang="en" href="https://grafo.studio/en/"/>
 
-    </style>
+    {% include 'includes/head_links.html' %}
 </head>
 <body>
 {% include 'includes/navbar.html' %}
@@ -107,10 +114,35 @@
                             <h2 class="mb-2 font-weight-bold fs2"><a href="{% url 'works' %}">{% blocktrans %}MORE
                                 &blacktriangleright;{% endblocktrans %}</a></h2>
                         </div>
-
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="site-section" style="    border: 1px solid #fe0088;
+    margin: 0 4rem;">
+        <div class="container" data-aos="fade-up">
+            <div class="row ">
+                <div class="col-md-6 col-lg-6 ">
+                    <div class="site-section-heading align-self-center text-left w-border">
+                        <h2 class="mb-5">{% blocktrans %}Have an idea for a video? <br>
+                            Just drop us a line and we'll create a full cycle commercial video for
+                            you{% endblocktrans %}</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="site-section-heading text-center w-border">
+                        <script data-b24-form="click/7/hjl90s" data-skip-moving="true"> (function (w, d, u) {
+                            var s = d.createElement('script');
+                            s.async = true;
+                            s.src = u + '?' + (Date.now() / 180000 | 0);
+                            var h = d.getElementsByTagName('script')[0];
+                            h.parentNode.insertBefore(s, h);
+                        })(window, document, 'https://cdn.bitrix24.ua/b15488213/crm/form/loader_7.js'); </script>
+                        <button class="mt-3 btn btn-lead">{% blocktrans %}Get in touch{% endblocktrans %}</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -127,12 +159,13 @@
                 <div class="col-md-4 col-lg-4 mb-5 mb-lg-5">
                     <a class="services-index__link" href="{% url 'services' %}">
                         <div class="pricing-video-container">
-                            <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
-                                <source src="{% static 'video/pricing_video.mp4' %}" type="video/mp4">
-                            </video>
+                            <img src="{{ static }}images/index/illustration.gif" alt="Image"
+                                 class="inline-price-video"
+                                 loading="lazy">
                             <div class="pricing-video-overlay">
                                 <div class="pricing-video-overlay-text">
-                                    <span class="pricing-title">{% blocktrans %}Illustration{% endblocktrans %}</span>
+                                            <span class="pricing-title">{% blocktrans %}
+                                                Illustration{% endblocktrans %}</span>
                                     {#                                <span class="pricing-price per-second-after">100$ per second</span>#}
                                 </div>
                             </div>
@@ -143,12 +176,13 @@
                 <div class="col-md-4 col-lg-4 mb-5 mb-lg-5">
                     <a class="services-index__link" href="{% url 'services' %}">
                         <div class="pricing-video-container">
-                            <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
-                                <source src="{% static 'video/pricing_motion_video.mp4' %}" type="video/mp4">
-                            </video>
+                            <img src="{{ static }}images/index/animation.gif" alt="Image"
+                                 class="inline-price-video"
+                                 loading="lazy">
                             <div class="pricing-video-overlay">
                                 <div class="pricing-video-overlay-text">
-                                    <span class="pricing-title">{% blocktrans %}Animation{% endblocktrans %}</span>
+                                            <span class="pricing-title">{% blocktrans %}
+                                                Animation{% endblocktrans %}</span>
                                     {#                                <span class="pricing-price">50$ per second</span>#}
                                 </div>
                             </div>
@@ -158,9 +192,9 @@
                 <div class="col-md-4 col-lg-4 mb-5 mb-lg-5">
                     <a class="services-index__link" href="{% url 'services' %}">
                         <div class="pricing-video-container">
-                            <video class="inline-price-video" autoplay muted loop playsinline webkit-playsinline>
-                                <source src="{% static 'video/pricing_video.mp4' %}" type="video/mp4">
-                            </video>
+                            <img src="{{ static }}images/index/post-prod.gif" alt="Image"
+                                 class="inline-price-video"
+                                 loading="lazy">
                             <div class="pricing-video-overlay">
                                 <div class="pricing-video-overlay-text">
                                     <span class="pricing-title">{% blocktrans %}Post
@@ -186,10 +220,8 @@
             <div class="row">
                 <div class="site-section-heading text-center mb-5 w-border col-md-6 mx-auto">
                     <h2 class="mb-5">{% blocktrans %}Our Team{% endblocktrans %}</h2>
-                    <p>{% blocktrans %}Combination of a correctly directed team and right using creativity is a recipe
-                        for the
-                        success
-                        of any project{% endblocktrans %}</p>
+                    <p>{% blocktrans %}Storytellers, dream chasers, motion designers, animators, and
+                        artists{% endblocktrans %}</p>
                 </div>
             </div>
             <div class="row">
@@ -262,8 +294,10 @@
                              loading="lazy">
                         <div class="text">
 
-                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}Svyatik{% endblocktrans %}</h2>
-                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Business Development
+                            <h2 class="mb-2 font-weight-light h4">{% blocktrans %}
+                                Svyatik{% endblocktrans %}</h2>
+                            <span class="d-block mb-2 text-white-opacity-05">{% blocktrans %}Business
+                                Development
                                 Manager{% endblocktrans %}</span>
                         </div>
                     </div>
@@ -299,7 +333,7 @@
             <div class="partners-grid">
                 {% for item in partners %}
                     <div class="partners-grid-wraper">
-                        <a target="_blank" href="{{ item.link }}">
+                        <a target="_blank" href="{{ item.link }}" rel="nofollow">
                             <img class="partners-grid-item" src="{{ item.image.url }}" alt="{{ item.name }}"
                                  loading="lazy">
                         </a>
@@ -313,8 +347,6 @@
 </div>
 {% include 'includes/footer.html' %}
 {% include 'includes/footer_links.html' %}
-{% include 'includes/poster_modal.html' %}
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript">
     let video = document.querySelector('.video-hero');
@@ -322,6 +354,5 @@
         video.style.opacity = 0.9 + window.scrollY / -1000;
     })
 </script>
-
 </body>
 </html>

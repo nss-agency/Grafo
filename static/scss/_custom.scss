@@ -264,12 +264,28 @@
     }
 }
 
-.services-index__link{
+.services-index__link {
     color: $white;
     transition: color .3s ease-in;
 
-    &:hover{
+    &:hover {
         color: $accent;
     }
 
+}
+
+
+.btn-lead {
+    color: #fff;
+    background-color: #ff0088;
+    border-color: #ff0088;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.8rem;
+    padding: .5em 1em;
+
+    &:hover {
+        background-color: #101013;
+        color: #ff0088;
+    }
 }

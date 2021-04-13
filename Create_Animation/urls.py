@@ -7,7 +7,6 @@ from django.conf.urls.i18n import i18n_patterns
 from core import views
 
 urlpatterns = i18n_patterns(
-
     path('dev/', admin.site.urls),
     path('i18n/', include('django.conf.urls.i18n')),
     path('', views.index, name='index'),
@@ -17,7 +16,6 @@ urlpatterns = i18n_patterns(
     path('contact/', views.contact, name='contact'),
     re_path(r'work/(?P<slug>[\w-]+)/$', views.work, name='work'),
     path(r'tinymce/', include('tinymce.urls')),
-    prefix_default_language=False
 )
 
 if settings.DEBUG:

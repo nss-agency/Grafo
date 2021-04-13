@@ -28,8 +28,10 @@ if not DEBUG:
     PREPEND_WWW = False
     BASE_URL = "https://grafo.studio/"
 
+
 if DEBUG:
     ALLOWED_HOSTS = []
+    # ALLOWED_HOSTS = ['https://grafo.studio', 'https://www.grafo.studio', 'www.grafo.studio', 'grafo.studio']
 else:
     ALLOWED_HOSTS = ['https://grafo.studio', 'https://www.grafo.studio', 'www.grafo.studio', 'grafo.studio']
 
@@ -123,7 +125,7 @@ LANGUAGE_CODE = 'en-us'
 LANGUAGES = (
     ('uk', 'Ukrainian'),
     ('en', 'English'),
-    ('de', 'Deutsch'),
+    ('ru', 'Russian'),
 )
 
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'uk'
@@ -144,6 +146,10 @@ USE_TZ = True
 FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o755
 FILE_UPLOAD_PERMISSIONS = 0o644
 
+FILE_UPLOAD_DIRECTORY_PERMISSIONS = 0o755
+FILE_UPLOAD_PERMISSIONS = 0o644
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
@@ -152,7 +158,9 @@ GOOGLE_RECAPTCHA_SECRET_KEY = '6LdeXfwUAAAAAF0_xFcwNPKz95CeBjspP9RSj57Y'
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 if not DEBUG:
+
     STATIC_ROOT = '/home/grafostu/public_html/static'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
@@ -178,7 +186,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'width': 1120,
     'cleanup_on_startup': True,
     'custom_undo_redo_levels': 20,
-    'selector': 'textarea#id_description_uk, textarea#id_description_en, textarea#id_description_de',
+    'selector': 'textarea#id_description_uk, textarea#id_description_en, textarea#id_description_de, textarea#id_description_ru',
     'theme': 'silver',
     'plugins': '''
             textcolor,save,link,image,media,preview,codesample,contextmenu,

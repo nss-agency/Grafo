@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-29 11:58+0200\n"
-"PO-Revision-Date: 2020-10-29 10:14+0000\n"
+"POT-Creation-Date: 2021-04-13 08:22+0000\n"
+"PO-Revision-Date: 2021-04-13 08:27+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Unknown\n"
+"Language-Team: No linguistic content\n"
 "Language: zxx\n"
 "Plural-Forms: nplurals=2; plural=n!=1;\n"
 "MIME-Version: 1.0\n"
@@ -15,70 +15,82 @@ msgstr ""
 "X-Loco-Parser: loco_parse_po\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: core/models.py:10
-msgid "Commercial"
-msgstr "Commercial"
+#: core/models.py:11 templates/works.html:63 templates/works.html:86
+#| msgid "Explainer video"
+msgid "Explainers"
+msgstr "Explainers"
 
-#: core/models.py:11 templates/works.html:60
-msgid "TV"
-msgstr "TV"
+#: core/models.py:12 templates/works.html:66 templates/works.html:93
+#| msgid "Commercial"
+msgid "Commercials"
+msgstr "Commercials"
 
-#: core/models.py:12
+#: core/models.py:13
+msgid "Music videos"
+msgstr "Music videos"
+
+#: core/models.py:14
+#| msgid "Logotypes animation"
+msgid "Logo animation"
+msgstr "Logo animation"
+
+#: core/models.py:15
 msgid "Creative"
 msgstr "Creative"
 
-#: templates/about.html:6 templates/about.html:41
+#: templates/404.html:10 templates/500.html:10 templates/505.html:10
+msgid "404"
+msgstr "404"
+
+#: templates/404.html:43 templates/500.html:43 templates/505.html:43
+msgid "back to home page"
+msgstr "back to home page"
+
+#: templates/about.html:10
 msgid "About Us"
 msgstr "About Us"
 
-#: templates/about.html:51
+#: templates/about.html:59
 msgid ""
-"We spend everything through our 2d prism and turn reality\n"
-"                    into 2D animation where no restrictions for your "
-"imagination where you can create all you want. Our\n"
-"                    team includes directors, artists, and animators working "
-"like a well-oiled machine. Our priority is\n"
-"                    always the quality of the work. We turn our passion into "
-"original stuff, like advertising, explainer\n"
-"                    videos, TV series, music videos, and our own creative "
-"projects. We animate the world."
+"We have gathered the best specialists with many years of\n"
+"                    experience, life inspiration, and a fresh look in order "
+"to create the most effective animated video\n"
+"                    that will perform the marketing goal in the best way. "
+"Our team is our main pride!\n"
+"                    Working on the project with the client, we 'sail in the "
+"same boat' to work out the smallest details,\n"
+"                    so that in the end proudly shake hands with each other "
+"and enjoy the result.\n"
+"                "
 msgstr ""
-"We spend everything through our 2d prism and turn reality\n"
-"                    into 2D animation where no restrictions for your "
-"imagination where you can create all you want. Our\n"
-"                    team includes directors, artists, and animators working "
-"like a well-oiled machine. Our priority is\n"
-"                    always the quality of the work. We turn our passion into "
-"original stuff, like advertising, explainer\n"
-"                    videos, TV series, music videos, and our own creative "
-"projects. We animate the world."
+"We have gathered the best specialists with many years of\n"
+"                    experience, life inspiration, and a fresh look in order "
+"to create the most effective animated video\n"
+"                    that will perform the marketing goal in the best way. "
+"Our team is our main pride!\n"
+"                    Working on the project with the client, we 'sail in the "
+"same boat' to work out the smallest details,\n"
+"                    so that in the end proudly shake hands with each other "
+"and enjoy the result.\n"
+"                "
 
-#: templates/about.html:65 templates/index.html:188
-msgid "Our Team"
-msgstr "Our Team"
-
-#: templates/about.html:66
-msgid ""
-"Combination of a correctly directed team and right using creativity is a "
-"recipe for\n"
-"                    the success\n"
-"                    of any project"
-msgstr ""
-"Combination of a correctly directed team and right using creativity is a "
-"recipe for\n"
-"                    the success\n"
-"                    of any project"
-
-#: templates/about.html:153 templates/index.html:298
+#: templates/about.html:154 templates/index.html:332
 msgid "THEY CHOOSE US"
 msgstr "THEY CHOOSE US"
 
-#: templates/contact.html:6 templates/includes/nav.html:28 
-#: templates/includes/navbar.html:29
-msgid "Get in touch"
-msgstr "Get in touch"
+#: templates/contact.html:10
+msgid "Contacts of creative studio 2D-animation Grafo Studio"
+msgstr "Contacts of creative studio 2D-animation Grafo Studio"
 
-#: templates/contact.html:42
+#: templates/contact.html:30
+msgid ""
+"Contacts of the creative studio Grafo Studio Lviv. Ukraine; Kiev, Boris "
+"Hmyri st., 5 ☎️ (068) 10 40 040 ⏩ Email: contact@grafo.studio"
+msgstr ""
+"Contacts of the creative studio Grafo Studio Lviv. Ukraine; Kiev, Boris "
+"Hmyri st., 5 ☎️ (068) 10 40 040 ⏩ Email: contact@grafo.studio"
+
+#: templates/contact.html:51
 msgid ""
 "\n"
 "                    Company\n"
@@ -88,15 +100,15 @@ msgstr ""
 "                    Company\n"
 "                    details"
 
-#: templates/contact.html:47
+#: templates/contact.html:56
 msgid "Number(Telegram)"
 msgstr "Number(Telegram)"
 
-#: templates/contact.html:50
+#: templates/contact.html:59
 msgid "Location"
 msgstr "Location"
 
-#: templates/contact.html:50
+#: templates/contact.html:59
 msgid ""
 "Lviv.\n"
 "                        Ukraine"
@@ -104,7 +116,7 @@ msgstr ""
 "Lviv.\n"
 "                        Ukraine"
 
-#: templates/contact.html:53
+#: templates/contact.html:62
 msgid ""
 "Kyiv.\n"
 "                        Ukraine, Borysa Hmyri St, 5"
@@ -112,7 +124,7 @@ msgstr ""
 "Kyiv.\n"
 "                        Ukraine, Borysa Hmyri St, 5"
 
-#: templates/contact.html:76
+#: templates/contact.html:85
 msgid ""
 "Thank you for writing us. We will contact you as soon as\n"
 "                        possible"
@@ -120,7 +132,7 @@ msgstr ""
 "Thank you for writing us. We will contact you as soon as\n"
 "                        possible"
 
-#: templates/contact.html:80
+#: templates/contact.html:89
 msgid ""
 "Invalid reCAPTCHA. Please try\n"
 "                        again."
@@ -128,7 +140,7 @@ msgstr ""
 "Invalid reCAPTCHA. Please try\n"
 "                        again."
 
-#: templates/contact.html:83
+#: templates/contact.html:92
 msgid ""
 "\n"
 "                    YES, we'd like to\n"
@@ -138,31 +150,31 @@ msgstr ""
 "                    YES, we'd like to\n"
 "                    direct a commercial for you."
 
-#: templates/contact.html:88
+#: templates/contact.html:97
 msgid "Feel free to drop us a line anytime."
 msgstr "Feel free to drop us a line anytime."
 
-#: templates/contact.html:94
+#: templates/contact.html:103
 msgid "First Name"
 msgstr "First Name"
 
-#: templates/contact.html:98
+#: templates/contact.html:107
 msgid "Last Name"
 msgstr "Last Name"
 
-#: templates/contact.html:104
+#: templates/contact.html:113
 msgid "E-mail"
 msgstr "E-mail"
 
-#: templates/contact.html:107
+#: templates/contact.html:116
 msgid "Your message here"
 msgstr "Your message here"
 
-#: templates/contact.html:112
+#: templates/contact.html:121
 msgid "Submit"
 msgstr "Submit"
 
-#: templates/contact.html:114
+#: templates/contact.html:123
 msgid "Brief"
 msgstr "Brief"
 
@@ -188,12 +200,11 @@ msgstr "Navigations"
 msgid "Home"
 msgstr "Home"
 
-#: templates/includes/footer.html:23 templates/index.html:80 
-#: templates/works.html:42
+#: templates/includes/footer.html:23 templates/index.html:87
 msgid "Our Works"
 msgstr "Our Works"
 
-#: templates/includes/footer.html:24 templates/includes/nav.html:25 
+#: templates/includes/footer.html:24 templates/includes/nav.html:25
 #: templates/includes/navbar.html:26
 msgid "About"
 msgstr "About"
@@ -206,21 +217,42 @@ msgstr "Contact"
 msgid "Follow Us"
 msgstr "Follow Us"
 
-#: templates/includes/nav.html:26 templates/includes/navbar.html:27 
-#: templates/works.html:6
+#: templates/includes/nav.html:26 templates/includes/navbar.html:27
 msgid "Works"
 msgstr "Works"
 
-#: templates/includes/nav.html:27 templates/includes/navbar.html:28 
-#: templates/services.html:6
+#: templates/includes/nav.html:27 templates/includes/navbar.html:28
 msgid "Services"
 msgstr "Services"
+
+#: templates/includes/nav.html:28 templates/includes/navbar.html:29
+#: templates/index.html:143
+msgid "Get in touch"
+msgstr "Get in touch"
 
 #: templates/includes/nav.html:31 templates/includes/navbar.html:32
 msgid "Language"
 msgstr "Language"
 
-#: templates/index.html:67
+#: templates/index.html:11
+msgid ""
+"Grafo Studio - creative 2D animation studio, professional 2D\n"
+"        animation"
+msgstr ""
+"Grafo Studio - creative 2D animation studio, professional 2D\n"
+"        animation"
+
+#: templates/index.html:32
+msgid ""
+"2D animation ⚡ Order the production of 2D videos and films in Lviv, Ukraine "
+"☎️ (068) 10 40 040 ⏩ Professional two-dimensional animation to order ⚡ 2D "
+"videos from the creative studio Grafo Studio"
+msgstr ""
+"2D animation ⚡ Order the production of 2D videos and films in Lviv, Ukraine "
+"☎️ (068) 10 40 040 ⏩ Professional two-dimensional animation to order ⚡ 2D "
+"videos from the creative studio Grafo Studio"
+
+#: templates/index.html:74
 msgid ""
 "Grafo is a studio specializing in 2D animation.\n"
 "                        Founded by a team of like-minded people, with "
@@ -240,7 +272,7 @@ msgstr ""
 "storytelling, motion design, and frame by frame\n"
 "                        animation to produce a high-quality product."
 
-#: templates/index.html:81
+#: templates/index.html:88
 msgid ""
 "We will approach your video using all our creativity. Making things original,"
 "\n"
@@ -252,7 +284,7 @@ msgstr ""
 "                        effective, and\n"
 "                        interesting to watch."
 
-#: templates/index.html:107
+#: templates/index.html:114
 msgid ""
 "MORE\n"
 "                                &blacktriangleright;"
@@ -260,19 +292,39 @@ msgstr ""
 "MORE\n"
 "                                &blacktriangleright;"
 
-#: templates/index.html:122
+#: templates/index.html:129
+msgid ""
+"Have an idea for a video? <br>\n"
+"                            Just drop us a line and we'll create a full "
+"cycle commercial video for\n"
+"                            you"
+msgstr ""
+"Have an idea for a video? <br>\n"
+"                            Just drop us a line and we'll create a full "
+"cycle commercial video for\n"
+"                            you"
+
+#: templates/index.html:154
 msgid "What we do"
 msgstr "What we do"
 
-#: templates/index.html:135 templates/services.html:51
-msgid "Illustration"
-msgstr "Illustration"
+#: templates/index.html:167
+msgid ""
+"\n"
+"                                                Illustration"
+msgstr ""
+"\n"
+"                                                Illustration"
 
-#: templates/index.html:151 templates/services.html:90
-msgid "Animation"
-msgstr "Animation"
+#: templates/index.html:184
+msgid ""
+"\n"
+"                                                Animation"
+msgstr ""
+"\n"
+"                                                Animation"
 
-#: templates/index.html:166
+#: templates/index.html:200
 msgid ""
 "Post\n"
 "                                        Production"
@@ -280,25 +332,23 @@ msgstr ""
 "Post\n"
 "                                        Production"
 
-#: templates/index.html:189
-msgid ""
-"Combination of a correctly directed team and right using creativity is a "
-"recipe\n"
-"                        for the\n"
-"                        success\n"
-"                        of any project"
-msgstr ""
-"Combination of a correctly directed team and right using creativity is a "
-"recipe\n"
-"                        for the\n"
-"                        success\n"
-"                        of any project"
+#: templates/index.html:222
+msgid "Our Team"
+msgstr "Our Team"
 
-#: templates/index.html:202
+#: templates/index.html:223
+msgid ""
+"Storytellers, dream chasers, motion designers, animators, and\n"
+"                        artists"
+msgstr ""
+"Storytellers, dream chasers, motion designers, animators, and\n"
+"                        artists"
+
+#: templates/index.html:234
 msgid "Tymko"
 msgstr "Tymko"
 
-#: templates/index.html:203
+#: templates/index.html:235
 msgid ""
 "Senior\n"
 "                                Animator"
@@ -306,11 +356,11 @@ msgstr ""
 "Senior\n"
 "                                Animator"
 
-#: templates/index.html:215
+#: templates/index.html:247
 msgid "Ostap"
 msgstr "Ostap"
 
-#: templates/index.html:216
+#: templates/index.html:248
 msgid ""
 "Creative\n"
 "                                Director"
@@ -318,11 +368,11 @@ msgstr ""
 "Creative\n"
 "                                Director"
 
-#: templates/index.html:228
+#: templates/index.html:260
 msgid "Nastia"
 msgstr "Nastia"
 
-#: templates/index.html:229
+#: templates/index.html:261
 msgid ""
 "Motion\n"
 "                                Designer"
@@ -330,11 +380,11 @@ msgstr ""
 "Motion\n"
 "                                Designer"
 
-#: templates/index.html:241
+#: templates/index.html:273
 msgid "Yakub"
 msgstr "Yakub"
 
-#: templates/index.html:242
+#: templates/index.html:274
 msgid ""
 "3D\n"
 "                                Animator"
@@ -342,11 +392,11 @@ msgstr ""
 "3D\n"
 "                                Animator"
 
-#: templates/index.html:253
+#: templates/index.html:285
 msgid "Dashka"
 msgstr "Dashka"
 
-#: templates/index.html:254
+#: templates/index.html:286
 msgid ""
 "\n"
 "                                Illustrator"
@@ -354,23 +404,29 @@ msgstr ""
 "\n"
 "                                Illustrator"
 
-#: templates/index.html:265
-msgid "Svyatik"
-msgstr "Svyatik"
-
-#: templates/index.html:266
+#: templates/index.html:297
 msgid ""
-"Business Development\n"
+"\n"
+"                                Svyatik"
+msgstr ""
+"\n"
+"                                Svyatik"
+
+#: templates/index.html:299
+msgid ""
+"Business\n"
+"                                Development\n"
 "                                Manager"
 msgstr ""
-"Business Development\n"
+"Business\n"
+"                                Development\n"
 "                                Manager"
 
-#: templates/index.html:277
+#: templates/index.html:311
 msgid "Vicky"
 msgstr "Vicky"
 
-#: templates/index.html:278
+#: templates/index.html:312
 msgid ""
 "Junior Motion\n"
 "                                Designer"
@@ -378,7 +434,7 @@ msgstr ""
 "Junior Motion\n"
 "                                Designer"
 
-#: templates/index.html:289
+#: templates/index.html:323
 msgid ""
 "about\n"
 "                                us"
@@ -386,138 +442,156 @@ msgstr ""
 "about\n"
 "                                us"
 
-#: templates/services.html:41
-msgid "Our Services"
-msgstr "Our Services"
+#: templates/services.html:12
+msgid "Our Services | Creative studio 2D animation Grafo Studio"
+msgstr "Our Services | Creative studio 2D animation Grafo Studio"
 
-#: templates/services.html:52
+#: templates/services.html:32
 msgid ""
-"Anything are memorable more easily when it backed up by beautiful\n"
-"                    illustrations"
+"Services of a creative studio 2D animation ⏩ Creation of advertising videos, "
+"video infographics, motion design ⚡ To order, call ☎️ (068) 10 40 040 | "
+"Grafo Studio"
 msgstr ""
-"Anything are memorable more easily when it backed up by beautiful\n"
-"                    illustrations"
+"Services of a creative studio 2D animation ⏩ Creation of advertising videos, "
+"video infographics, motion design ⚡ To order, call ☎️ (068) 10 40 040 | "
+"Grafo Studio"
 
-#: templates/services.html:75
+#: templates/services.html:60
+msgid "Illustration"
+msgstr "Illustration"
+
+#: templates/services.html:61
+#| msgid ""
+#| "Anything are memorable more easily when it backed up by beautiful\n"
+#| "                    illustrations"
+msgid ""
+"Any information is perceived better when it's packed with cool\n"
+"                    illustrations."
+msgstr ""
+"Any information is perceived better when it's packed with cool\n"
+"                    illustrations."
+
+#: templates/services.html:84
+msgid "Storyboards"
+msgstr "Storyboards"
+
+#: templates/services.html:85
 msgid "Charters Design"
 msgstr "Charters Design"
 
-#: templates/services.html:76
-msgid "Brand-Book Development"
-msgstr "Brand-Book Development"
+#: templates/services.html:86
+#| msgid "Background design"
+msgid "Background Design"
+msgstr "Background Design"
 
-#: templates/services.html:77
-msgid "Background design"
-msgstr "Background design"
+#: templates/services.html:87
+#| msgid "Logotype design"
+msgid "Logo Design"
+msgstr "Logo Design"
 
-#: templates/services.html:78
-msgid "Posters creation"
-msgstr "Posters creation"
+#: templates/services.html:98
+msgid "Animation"
+msgstr "Animation"
 
-#: templates/services.html:79
-msgid "Logotype design"
-msgstr "Logotype design"
-
-#: templates/services.html:91
+#: templates/services.html:99
+#| msgid ""
+#| "Animation gives you a perfect opportunity to make you and your product "
+#| "distinct in\n"
+#| "                    the thick network of communication streams. Once your "
+#| "audience sees an animation in your specific\n"
+#| "                    style, they know it’s you and they can expect only for "
+#| "the best."
 msgid ""
-"Animation gives you a perfect opportunity to make you and your product "
-"distinct in\n"
-"                    the thick network of communication streams. Once your "
-"audience sees an animation in your specific\n"
-"                    style, they know it’s you and they can expect only for "
-"the best."
+"Animation gives you a perfect opportunity to make your product distinct in "
+"the thick\n"
+"                    network of communication streams."
 msgstr ""
-"Animation gives you a perfect opportunity to make you and your product "
-"distinct in\n"
-"                    the thick network of communication streams. Once your "
-"audience sees an animation in your specific\n"
-"                    style, they know it’s you and they can expect only for "
-"the best."
+"Animation gives you a perfect opportunity to make your product distinct in "
+"the thick\n"
+"                    network of communication streams."
 
-#: templates/services.html:106
-msgid "Explainer video"
-msgstr "Explainer video"
+#: templates/services.html:113
+#| msgid "Explainer video"
+msgid "Explainer Videos"
+msgstr "Explainer Videos"
 
-#: templates/services.html:107
-msgid "VJing"
-msgstr "VJing"
+#: templates/services.html:114
+#| msgid "commercial"
+msgid "Animated commercials"
+msgstr "Animated commercials"
 
-#: templates/services.html:108 templates/services.html:158
-msgid "Broadcast design"
-msgstr "Broadcast design"
+#: templates/services.html:115
+#| msgid "Promo video"
+msgid "Promo Video"
+msgstr "Promo Video"
 
-#: templates/services.html:109
-msgid "Promo video"
-msgstr "Promo video"
+#: templates/services.html:116 templates/works.html:69 templates/works.html:101
+#| msgid "Music videos"
+msgid "Music Videos"
+msgstr "Music Videos"
 
-#: templates/services.html:110
-msgid "Music videos"
-msgstr "Music videos"
+#: templates/services.html:117 templates/works.html:72 templates/works.html:109
+#| msgid "Logotypes animation"
+msgid "Logo Animation"
+msgstr "Logo Animation"
 
-#: templates/services.html:111
-msgid "Logotypes animation"
-msgstr "Logotypes animation"
+#: templates/services.html:118
+#| msgid "infographics"
+msgid "Infographics"
+msgstr "Infographics"
 
-#: templates/services.html:112 templates/services.html:157
-msgid "infographics"
-msgstr "infographics"
-
-#: templates/services.html:132
+#: templates/services.html:138
 msgid "Post Production"
 msgstr "Post Production"
 
-#: templates/services.html:133
+#: templates/services.html:139
 msgid ""
-"Gather all previous together, with pinch of FX and sound design to make your "
-"video\n"
-"                    visual harmonical and build the bridge between you and "
-"your target audience"
+"We stay connected with you to provide the in-time release of your\n"
+"                    video."
 msgstr ""
-"Gather all previous together, with pinch of FX and sound design to make your "
-"video\n"
-"                    visual harmonical and build the bridge between you and "
-"your target audience"
+"We stay connected with you to provide the in-time release of your\n"
+"                    video."
 
-#: templates/services.html:154
+#: templates/services.html:160
 msgid "Sound Design"
 msgstr "Sound Design"
 
-#: templates/services.html:155
-msgid "Voice over"
-msgstr "Voice over"
+#: templates/services.html:161
+#| msgid "Voice over"
+msgid "Voice Over"
+msgstr "Voice Over"
 
-#: templates/services.html:156
+#: templates/services.html:162
 msgid "Compositing"
 msgstr "Compositing"
 
-#: templates/works.html:43
+#: templates/works.html:10
+#| msgid "Animation studio portfolio | Creative studio 2D animation Grafo Studio"
 msgid ""
-"We will approach your video using all our\n"
-"                    creativity."
+"Animation studio portfolio | Creative studio 2D animation Grafo\n"
+"        Studio"
 msgstr ""
-"We will approach your video using all our\n"
-"                    creativity."
+"Animation studio portfolio | Creative studio 2D animation Grafo\n"
+"        Studio"
 
-#: templates/works.html:54
+#: templates/works.html:31
+msgid ""
+"Portfolio of completed works from Grafo Studio ⏩ Creation of advertising "
+"videos, video infographics, motion design Do you want an animated video? "
+"Call ☎️ (068) 10 40 040"
+msgstr ""
+"Portfolio of completed works from Grafo Studio ⏩ Creation of advertising "
+"videos, video infographics, motion design Do you want an animated video? "
+"Call ☎️ (068) 10 40 040"
+
+#: templates/works.html:60
 msgid "ALL"
 msgstr "ALL"
 
-#: templates/works.html:57
-msgid "COMMERCIAL"
-msgstr "COMMERCIAL"
-
-#: templates/works.html:63
+#: templates/works.html:75
 msgid "CREATIVE"
 msgstr "CREATIVE"
 
-#: templates/works.html:74
-msgid "commercial"
-msgstr "commercial"
-
-#: templates/works.html:82
-msgid "tv"
-msgstr "tv"
-
-#: templates/works.html:90
+#: templates/works.html:117
 msgid "creative"
 msgstr "creative"
