@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-13 08:47+0000\n"
-"PO-Revision-Date: 2021-04-13 08:51+0000\n"
+"POT-Creation-Date: 2021-04-15 07:09+0000\n"
+"PO-Revision-Date: 2021-04-15 07:20+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: No linguistic content\n"
 "Language: zxx\n"
@@ -31,9 +31,9 @@ msgstr "Видеоклипы"
 msgid "Logo animation"
 msgstr "Анимация Логотипов"
 
-#: core/models.py:15
+#: core/models.py:15 templates/works.html:75
 msgid "Creative"
-msgstr "Творческий"
+msgstr "креатив"
 
 #: templates/404.html:10 templates/500.html:10 templates/505.html:10
 msgid "404"
@@ -103,29 +103,37 @@ msgstr "Номер (Telegram)"
 msgid "Location"
 msgstr "Расположение"
 
-#: templates/contact.html:59
+#: templates/contact.html:62
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
 msgid ""
 "Lviv.\n"
-"                        Ukraine"
+"                            Ukraine"
 msgstr ""
 "Львов.\n"
 "                         Украина"
 
-#: templates/contact.html:62
+#: templates/contact.html:65
+#| msgid ""
+#| "Kyiv.\n"
+#| "                        Ukraine, Borysa Hmyri St, 5"
 msgid ""
-"Kyiv.\n"
-"                        Ukraine, Borysa Hmyri St, 5"
+"\n"
+"                            Kyiv.\n"
+"                            Ukraine, Borysa Hmyri St, 5"
 msgstr ""
+"\n"
 "Киев.\n"
 "                         Украина, ул. Бориса Гмыри, 5"
 
-#: templates/contact.html:85
+#: templates/contact.html:92
 msgid ""
 "Thank you for writing us. We will contact you as soon as\n"
 "                        possible"
 msgstr "Спасибо, что написали нам. Мы свяжемся с вами как можно скорее"
 
-#: templates/contact.html:89
+#: templates/contact.html:96
 msgid ""
 "Invalid reCAPTCHA. Please try\n"
 "                        again."
@@ -133,43 +141,92 @@ msgstr ""
 "Неверный reCAPTCHA. Пожалуйста, попробуй\n"
 "                         ещё раз."
 
-#: templates/contact.html:92
+#: templates/contact.html:99
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
 msgid ""
 "\n"
-"                    YES, we'd like to\n"
-"                    direct a commercial for you."
+"                    How to start our cooperation?"
 msgstr ""
 "\n"
-"                    ДА, мы хотим снять\n"
-"                    для вас рекламный ролик."
-
-#: templates/contact.html:97
-msgid "Feel free to drop us a line anytime."
-msgstr "Не стесняйтесь писать нам в любое время."
+"                    Как мы можем начать наше сотрудничество?"
 
 #: templates/contact.html:103
-msgid "First Name"
-msgstr "Имя"
-
-#: templates/contact.html:107
-msgid "Last Name"
-msgstr "Фамилия"
+msgid ""
+"Just drop us a\n"
+"                    line at the email address below. Tell us about yourself "
+"and your product/project, and what task we\n"
+"                    have to solve.\n"
+"                    If you do not know how to submit it, it will help to "
+"fill out the brief, which you will find here.\n"
+"                    We will study it carefully and send the offer within 7 "
+"hours."
+msgstr ""
+"Просто напишите нам письмо на адрес ниже. Расскажите о себе и своем продукте,"
+" чем вы занимаетесь и какую задачу мы должны решить.\n"
+"Если не знаете как это подать, поможет заполнения брифа, который вы найдете "
+"здесь.\n"
+"Мы его внимательно изучим и отправим предложение в течение 7 часов."
 
 #: templates/contact.html:113
+#| msgid ""
+#| "about\n"
+#| "                                us"
+msgid ""
+"First\n"
+"                                Name"
+msgstr ""
+"Имя\n"
+"                                "
+
+#: templates/contact.html:118
+#| msgid ""
+#| "about\n"
+#| "                                us"
+msgid ""
+"Last\n"
+"                                Name"
+msgstr ""
+"Фамилия\n"
+"                                "
+
+#: templates/contact.html:125
 msgid "E-mail"
 msgstr "E-mail"
 
-#: templates/contact.html:116
-msgid "Your message here"
-msgstr "Ваше сообщение"
+#: templates/contact.html:128
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
+msgid ""
+"Your message\n"
+"                        here"
+msgstr ""
+"Ваше сообщение\n"
+"                        здесь"
 
-#: templates/contact.html:121
-msgid "Submit"
-msgstr "Подтвердить"
+#: templates/contact.html:134
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
+msgid ""
+"\n"
+"                        Submit"
+msgstr ""
+"\n"
+"                        Отправить"
 
-#: templates/contact.html:123
-msgid "Brief"
-msgstr "Бриф"
+#: templates/contact.html:137
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
+msgid ""
+"\n"
+"                        Brief"
+msgstr ""
+"\n"
+"                        Бриф"
 
 #: templates/includes/footer.html:7
 msgid "About Grafo"
@@ -329,7 +386,7 @@ msgid ""
 "Storytellers, dream chasers, motion designers, animators, and\n"
 "                        artists"
 msgstr ""
-"Рассказчики, охотники за мечтами, моушн-дизайнеры, аниматоры и\n"
+"Рассказчики, мечтатели, моушн-дизайнеры, аниматоры и\n"
 "                         художники"
 
 #: templates/index.html:237
@@ -552,10 +609,6 @@ msgstr ""
 msgid "ALL"
 msgstr "Все"
 
-#: templates/works.html:75
-msgid "CREATIVE"
-msgstr "ТВОРЧЕСКИЙ"
-
 #: templates/works.html:117
 msgid "creative"
-msgstr "творческий"
+msgstr "креатив"

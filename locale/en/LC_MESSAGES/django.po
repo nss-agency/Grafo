@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-13 08:47+0000\n"
-"PO-Revision-Date: 2021-04-13 08:51+0000\n"
+"POT-Creation-Date: 2021-04-15 07:09+0000\n"
+"PO-Revision-Date: 2021-04-15 07:16+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: No linguistic content\n"
 "Language: zxx\n"
@@ -31,7 +31,7 @@ msgstr "Music videos"
 msgid "Logo animation"
 msgstr "Logo animation"
 
-#: core/models.py:15
+#: core/models.py:15 templates/works.html:75
 msgid "Creative"
 msgstr "Creative"
 
@@ -105,75 +105,111 @@ msgstr "Number(Telegram)"
 msgid "Location"
 msgstr "Location"
 
-#: templates/contact.html:59
-msgid ""
-"Lviv.\n"
-"                        Ukraine"
-msgstr ""
-"Lviv.\n"
-"                        Ukraine"
-
 #: templates/contact.html:62
 msgid ""
-"Kyiv.\n"
-"                        Ukraine, Borysa Hmyri St, 5"
+"Lviv.\n"
+"                            Ukraine"
 msgstr ""
-"Kyiv.\n"
-"                        Ukraine, Borysa Hmyri St, 5"
+"Lviv.\n"
+"                            Ukraine"
 
-#: templates/contact.html:85
+#: templates/contact.html:65
 msgid ""
-"Thank you for writing us. We will contact you as soon as\n"
-"                        possible"
+"\n"
+"                            Kyiv.\n"
+"                            Ukraine, Borysa Hmyri St, 5"
 msgstr ""
-"Thank you for writing us. We will contact you as soon as\n"
-"                        possible"
-
-#: templates/contact.html:89
-msgid ""
-"Invalid reCAPTCHA. Please try\n"
-"                        again."
-msgstr ""
-"Invalid reCAPTCHA. Please try\n"
-"                        again."
+"\n"
+"                            Kyiv.\n"
+"                            Ukraine, Borysa Hmyri St, 5"
 
 #: templates/contact.html:92
 msgid ""
+"Thank you for writing us. We will contact you as soon as\n"
+"                        possible"
+msgstr ""
+"Thank you for writing us. We will contact you as soon as\n"
+"                        possible"
+
+#: templates/contact.html:96
+msgid ""
+"Invalid reCAPTCHA. Please try\n"
+"                        again."
+msgstr ""
+"Invalid reCAPTCHA. Please try\n"
+"                        again."
+
+#: templates/contact.html:99
+msgid ""
 "\n"
-"                    YES, we'd like to\n"
-"                    direct a commercial for you."
+"                    How to start our cooperation?"
 msgstr ""
 "\n"
-"                    YES, we'd like to\n"
-"                    direct a commercial for you."
-
-#: templates/contact.html:97
-msgid "Feel free to drop us a line anytime."
-msgstr "Feel free to drop us a line anytime."
+"                    How to start our cooperation?"
 
 #: templates/contact.html:103
-msgid "First Name"
-msgstr "First Name"
-
-#: templates/contact.html:107
-msgid "Last Name"
-msgstr "Last Name"
+msgid ""
+"Just drop us a\n"
+"                    line at the email address below. Tell us about yourself "
+"and your product/project, and what task we\n"
+"                    have to solve.\n"
+"                    If you do not know how to submit it, it will help to "
+"fill out the brief, which you will find here.\n"
+"                    We will study it carefully and send the offer within 7 "
+"hours."
+msgstr ""
+"Just drop us a\n"
+"                    line at the email address below. Tell us about yourself "
+"and your product/project, and what task we\n"
+"                    have to solve.\n"
+"                    If you do not know how to submit it, it will help to "
+"fill out the brief, which you will find here.\n"
+"                    We will study it carefully and send the offer within 7 "
+"hours."
 
 #: templates/contact.html:113
+msgid ""
+"First\n"
+"                                Name"
+msgstr ""
+"First\n"
+"                                Name"
+
+#: templates/contact.html:118
+msgid ""
+"Last\n"
+"                                Name"
+msgstr ""
+"Last\n"
+"                                Name"
+
+#: templates/contact.html:125
 msgid "E-mail"
 msgstr "E-mail"
 
-#: templates/contact.html:116
-msgid "Your message here"
-msgstr "Your message here"
+#: templates/contact.html:128
+msgid ""
+"Your message\n"
+"                        here"
+msgstr ""
+"Your message\n"
+"                        here"
 
-#: templates/contact.html:121
-msgid "Submit"
-msgstr "Submit"
+#: templates/contact.html:134
+msgid ""
+"\n"
+"                        Submit"
+msgstr ""
+"\n"
+"                        Submit"
 
-#: templates/contact.html:123
-msgid "Brief"
-msgstr "Brief"
+#: templates/contact.html:137
+msgid ""
+"\n"
+"                        Brief"
+msgstr ""
+"\n"
+"                        Brief"
 
 #: templates/includes/footer.html:7
 msgid "About Grafo"
@@ -572,10 +608,6 @@ msgstr ""
 #: templates/works.html:60
 msgid "ALL"
 msgstr "ALL"
-
-#: templates/works.html:75
-msgid "CREATIVE"
-msgstr "CREATIVE"
 
 #: templates/works.html:117
 msgid "creative"

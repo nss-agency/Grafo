@@ -32,11 +32,11 @@
     <meta name="keywords"
           content="2d, 2d animation, 2d art, 2d advertisement, advertisement, animation studio, animation"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="canonical" href="https://grafo.studio/{{ current_language.code }}/contact/" />
-    <link rel="alternate" hreflang="uk" href="https://grafo.studio/uk/contact/" />
-    <link rel="alternate" hreflang="ru" href="https://grafo.studio/ru/contact/" />
-    <link rel="alternate" hreflang="en" href="https://grafo.studio/en/contact/" />
-        
+    <link rel="canonical" href="https://grafo.studio/{{ current_language.code }}/contact/"/>
+    <link rel="alternate" hreflang="uk" href="https://grafo.studio/uk/contact/"/>
+    <link rel="alternate" hreflang="ru" href="https://grafo.studio/ru/contact/"/>
+    <link rel="alternate" hreflang="en" href="https://grafo.studio/en/contact/"/>
+
     {% include 'includes/head_links.html' %}
 </head>
 <body>
@@ -56,26 +56,33 @@
                     <li>{% blocktrans %}Number(Telegram){% endblocktrans %}: <a class="link-pr" target="_blank"
                                                                                 href="https://t.me/grafostudio">+38
                         (068) 10 40 040</a></li>
-                    <li>{% blocktrans %}Location{% endblocktrans %}: <br> <a class="link-pr" href="https://bit.ly/2kzNn36" target="_blank"  rel="nofollow">{% blocktrans %}Lviv.
-                        Ukraine{% endblocktrans %}</a>
+                    <li>{% blocktrans %}Location{% endblocktrans %}: <br> <a class="link-pr"
+                                                                             href="https://bit.ly/2kzNn36"
+                                                                             target="_blank" rel="nofollow">
+                        {% blocktrans %}Lviv.
+                            Ukraine{% endblocktrans %}</a>
                         <br>
-                    <a class="link-pr" href="https://bit.ly/2kzNn36" target="_blank"  rel="nofollow">{% blocktrans %}Kyiv.
-                        Ukraine, Borysa Hmyri St, 5{% endblocktrans %}</a>
+                        <a class="link-pr" href="https://bit.ly/2kzNn36" target="_blank" rel="nofollow">{% blocktrans %}
+                            Kyiv.
+                            Ukraine, Borysa Hmyri St, 5{% endblocktrans %}</a>
                     </li>
                 </ul>
                 <ul class="social-icons d-flex justify-content-around mt-2 mt-sm-0">
-                    <li><a class='link-pr' href="https://www.facebook.com/Grafo-studio-108815584139126" target="_blank"  rel="nofollow"><span
+                    <li><a class='link-pr' href="https://www.facebook.com/Grafo-studio-108815584139126" target="_blank"
+                           rel="nofollow"><span
                             class="icon-facebook"></span></a></li>
-                    <li><a class='link-pr' href="https://instagram.com/grafo_studio" target="_blank"  rel="nofollow"><span
+                    <li><a class='link-pr' href="https://instagram.com/grafo_studio" target="_blank"
+                           rel="nofollow"><span
                             class="icon-instagram"></span></a>
                     </li>
-                    <li><a class='link-pr' href="https://www.behance.net/grafo_studio" target="_blank"  rel="nofollow"><span
+                    <li><a class='link-pr' href="https://www.behance.net/grafo_studio" target="_blank"
+                           rel="nofollow"><span
                             class="icon-behance"></span></a>
                     </li>
                     <li><a class='link-pr' href="https://www.youtube.com/channel/UCqi_zCskRtFbAZ8bnjUfrEw"
-                           target="_blank"  rel="nofollow"><span class="icon-youtube"></span></a>
+                           target="_blank" rel="nofollow"><span class="icon-youtube"></span></a>
                     </li>
-                    <li><a class='link-pr' href="https://vimeo.com/grafostudio" target="_blank"  rel="nofollow"><span
+                    <li><a class='link-pr' href="https://vimeo.com/grafostudio" target="_blank" rel="nofollow"><span
                             class="icon-vimeo"></span></a>
                     </li>
                 </ul>
@@ -90,21 +97,26 @@
                         again.{% endblocktrans %}</div>
                 {% endif %}
                 <h2 class="text-center section-intro__subtitle bottom-border align-items-center fs-2">{% blocktrans %}
-                    YES, we'd like to
-                    direct a commercial for you.{% endblocktrans %}
+                    How to start our cooperation?{% endblocktrans %}
                 </h2>
                 <span style="text-transform: none;"
-                      class="text-white d-block text-center section-intro__title d-block">{% blocktrans %}Feel free to drop us a line anytime.{% endblocktrans %}</span>
+                      class="text-white d-block text-center section-intro__title d-block mb-2">{% blocktrans %}Just drop us a
+                    line at the email address below. Tell us about yourself and your product/project, and what task we
+                    have to solve.
+                    If you do not know how to submit it, it will help to fill out the brief, which you will find here.
+                    We will study it carefully and send the offer within 7 hours.{% endblocktrans %}</span>
                 <form method="post">
 
                     {% csrf_token %}
                     <div class="input-grid">
                         <div class="input-group">
-                            <label class="full-label required" for="first_name">{% blocktrans %}First Name{% endblocktrans %}</label>
+                            <label class="full-label required" for="first_name">{% blocktrans %}First
+                                Name{% endblocktrans %}</label>
                             <input required name="first_name" id="first_name" type="text">
                         </div>
                         <div class="input-group">
-                            <label class="full-label required" for="last_name">{% blocktrans %}Last Name{% endblocktrans %}</label>
+                            <label class="full-label required" for="last_name">{% blocktrans %}Last
+                                Name{% endblocktrans %}</label>
                             <input required name="last_name" id="last_name" type="text">
                         </div>
 
@@ -113,14 +125,17 @@
                         <label class="full-label required" for="email">{% blocktrans %}E-mail{% endblocktrans %}</label>
                         <input required name="email" id="email" type="email">
                     </div>
-                    <label class="full-label required" for="message">{% blocktrans %}Your message here{% endblocktrans %}</label>
+                    <label class="full-label required" for="message">{% blocktrans %}Your message
+                        here{% endblocktrans %}</label>
                     <textarea required rows="5" name="message" id="message"
                               type="text"></textarea><br>
                     <div class="g-recaptcha " data-theme="dark" data-size="normal"
                          data-sitekey="6LdeXfwUAAAAAKew_IPSQWs-Lqcnchi9hPjuVBd_"></div>
-                    <button class="mt-3 btn btn-contact " type="submit" style="padding: 0.5em 3em;">{% blocktrans %}Submit{% endblocktrans %}</button>
+                    <button class="mt-3 btn btn-contact " type="submit" style="padding: 0.5em 3em;">{% blocktrans %}
+                        Submit{% endblocktrans %}</button>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMObn7vjTLit0g1pfuyBeh7IGFFr_ZoF32L-nCw3RybeIBLQ/viewform"
-                       class="mt-3 ml-3 btn btn-contact" style="padding: 0.5em 3em;"  rel="nofollow">{% blocktrans %}Brief{% endblocktrans %}</a>
+                       class="mt-3 ml-3 btn btn-contact" style="padding: 0.5em 3em;" rel="nofollow">{% blocktrans %}
+                        Brief{% endblocktrans %}</a>
                 </form>
             </div>
         </div>

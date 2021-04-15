@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-13 08:47+0000\n"
-"PO-Revision-Date: 2021-04-13 08:52+0000\n"
+"POT-Creation-Date: 2021-04-15 07:09+0000\n"
+"PO-Revision-Date: 2021-04-15 07:28+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: No linguistic content\n"
 "Language: zxx\n"
@@ -17,21 +17,21 @@ msgstr ""
 
 #: core/models.py:11 templates/works.html:63 templates/works.html:86
 msgid "Explainers"
-msgstr "Пояснювальні Відео"
+msgstr "Експлейнери"
 
 #: core/models.py:12 templates/works.html:66 templates/works.html:93
 msgid "Commercials"
-msgstr "Комерція"
+msgstr "Рекламні ролики"
 
 #: core/models.py:13
 msgid "Music videos"
-msgstr "Відеокліпи"
+msgstr "Музичні кліпи"
 
 #: core/models.py:14
 msgid "Logo animation"
 msgstr "Анімація Логотипів"
 
-#: core/models.py:15
+#: core/models.py:15 templates/works.html:75
 msgid "Creative"
 msgstr "Креатив"
 
@@ -103,23 +103,31 @@ msgstr "Телефон(Telegram)"
 msgid "Location"
 msgstr "Локація"
 
-#: templates/contact.html:59
+#: templates/contact.html:62
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
 msgid ""
 "Lviv.\n"
-"                        Ukraine"
+"                            Ukraine"
 msgstr ""
 "Львів.\n"
 "                        Україна"
 
-#: templates/contact.html:62
+#: templates/contact.html:65
+#| msgid ""
+#| "Kyiv.\n"
+#| "                        Ukraine, Borysa Hmyri St, 5"
 msgid ""
-"Kyiv.\n"
-"                        Ukraine, Borysa Hmyri St, 5"
+"\n"
+"                            Kyiv.\n"
+"                            Ukraine, Borysa Hmyri St, 5"
 msgstr ""
+"\n"
 "Київ.\n"
 "                        вулиця Бориса Гмирі, 5"
 
-#: templates/contact.html:85
+#: templates/contact.html:92
 msgid ""
 "Thank you for writing us. We will contact you as soon as\n"
 "                        possible"
@@ -127,7 +135,7 @@ msgstr ""
 "Дякуємо, що написали нам. Ми зв’яжемося з вами якомога швидше\n"
 "                         "
 
-#: templates/contact.html:89
+#: templates/contact.html:96
 msgid ""
 "Invalid reCAPTCHA. Please try\n"
 "                        again."
@@ -135,43 +143,92 @@ msgstr ""
 "Недійсна reCAPTCHA. Будь ласка, спробуйте\n"
 "                         знову."
 
-#: templates/contact.html:92
+#: templates/contact.html:99
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
 msgid ""
 "\n"
-"                    YES, we'd like to\n"
-"                    direct a commercial for you."
+"                    How to start our cooperation?"
 msgstr ""
 "\n"
-"                    Так, ми б хотіли\n"
-"                    розробити для вас рекламний ролик."
-
-#: templates/contact.html:97
-msgid "Feel free to drop us a line anytime."
-msgstr "Не соромтеся писати нам в будь-який час."
+"                    Як ми можемо розпочати нашу співпрацю?"
 
 #: templates/contact.html:103
-msgid "First Name"
-msgstr "Ім'я"
-
-#: templates/contact.html:107
-msgid "Last Name"
-msgstr "Прівище"
+msgid ""
+"Just drop us a\n"
+"                    line at the email address below. Tell us about yourself "
+"and your product/project, and what task we\n"
+"                    have to solve.\n"
+"                    If you do not know how to submit it, it will help to "
+"fill out the brief, which you will find here.\n"
+"                    We will study it carefully and send the offer within 7 "
+"hours."
+msgstr ""
+"Просто напишіть нам листа на адресу нижче. Розкажіть про себе та свій "
+"продукт, чим ви займаєтеся і яку задачу ми повинні вирішити. \n"
+"Якщо не знаєте як це подати, допоможе заповнення  брифу, який ви знайдете "
+"ось тут. \n"
+"Ми його уважно вивчимо та відправимо пропозицію протягом 7 годин."
 
 #: templates/contact.html:113
+#| msgid ""
+#| "about\n"
+#| "                                us"
+msgid ""
+"First\n"
+"                                Name"
+msgstr ""
+"Ім'я\n"
+"                                "
+
+#: templates/contact.html:118
+#| msgid ""
+#| "about\n"
+#| "                                us"
+msgid ""
+"Last\n"
+"                                Name"
+msgstr ""
+"Прізвище\n"
+"                                "
+
+#: templates/contact.html:125
 msgid "E-mail"
 msgstr "E-mail"
 
-#: templates/contact.html:116
-msgid "Your message here"
-msgstr "Ваше повідомлення"
+#: templates/contact.html:128
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
+msgid ""
+"Your message\n"
+"                        here"
+msgstr ""
+"Ваше повідомлення\n"
+"                        тут"
 
-#: templates/contact.html:121
-msgid "Submit"
-msgstr "Підтвердити"
+#: templates/contact.html:134
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
+msgid ""
+"\n"
+"                        Submit"
+msgstr ""
+"\n"
+"                        Відправити"
 
-#: templates/contact.html:123
-msgid "Brief"
-msgstr "Бриф"
+#: templates/contact.html:137
+#| msgid ""
+#| "Lviv.\n"
+#| "                        Ukraine"
+msgid ""
+"\n"
+"                        Brief"
+msgstr ""
+"\n"
+"                        Бриф"
 
 #: templates/includes/footer.html:7
 msgid "About Grafo"
@@ -222,7 +279,7 @@ msgstr "Послуги"
 #: templates/includes/nav.html:28 templates/includes/navbar.html:29
 #: templates/index.html:146
 msgid "Get in touch"
-msgstr "Будемо на зв'язку"
+msgstr "Контакт"
 
 #: templates/includes/nav.html:31 templates/includes/navbar.html:32
 msgid "Language"
@@ -334,7 +391,7 @@ msgstr "Наша Команда"
 msgid ""
 "Storytellers, dream chasers, motion designers, animators, and\n"
 "                        artists"
-msgstr "Казкарі, переслідувачі мрій, дизайнери руху, аніматори та художники"
+msgstr "Сторітеллери, мрійники,  моушн дизайнери ,та художники"
 
 #: templates/index.html:237
 msgid "Tymko"
@@ -490,11 +547,11 @@ msgstr ""
 
 #: templates/services.html:113
 msgid "Explainer Videos"
-msgstr "Пояснювальні Відео"
+msgstr "Експлейнери"
 
 #: templates/services.html:114
 msgid "Animated commercials"
-msgstr "Анімаційні рекламні ролики"
+msgstr "Рекламні ролики"
 
 #: templates/services.html:115
 msgid "Promo Video"
@@ -502,7 +559,7 @@ msgstr "Промо відео"
 
 #: templates/services.html:116 templates/works.html:69 templates/works.html:101
 msgid "Music Videos"
-msgstr "Відеокліпи"
+msgstr "Музичні кліпи"
 
 #: templates/services.html:117 templates/works.html:72 templates/works.html:109
 msgid "Logo Animation"
@@ -556,10 +613,6 @@ msgstr ""
 #: templates/works.html:60
 msgid "ALL"
 msgstr "ВСЕ"
-
-#: templates/works.html:75
-msgid "CREATIVE"
-msgstr "КРЕАТИВ"
 
 #: templates/works.html:117
 msgid "creative"
